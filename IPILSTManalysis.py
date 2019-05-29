@@ -112,7 +112,7 @@ def fit_lstm(train, test, raw, scaler, batch_size, nb_epoch, neurons,activation,
 
 def run(repeats, batches, n_epochs, n_neurons, activation,optim):
     # load dataset
-    dataset = read_csv('drive/My Drive/TFM/conjuntofc.csv', header=0, parse_dates=[0], index_col=0, squeeze=True)
+    dataset = read_csv('conjuntofc.csv', header=0, parse_dates=[0], index_col=0, squeeze=True)
     dataset = dataset[-73:]
     dataset = dataset[dataset.columns[::-1]]
     # transform data to be stationary
@@ -161,13 +161,13 @@ def run(repeats, batches, n_epochs, n_neurons, activation,optim):
             pyplot.title('repeats =' + str(31+i) + 'epochs = '+ str(e) +'_batch ='+str(batches)+'_neurons=' + str(n_neurons)+ 'optimizer = '+optim, fontdict=None, loc='center')
             pyplot.xlabel('epochs')
             pyplot.ylabel('MAPE')
-            history.to_csv('drive/My Drive/TFM/definitivo2/repeat='+ str(i)+'optimizador='+ str(optim)+'.csv')
+            history.to_csv('repeat='+ str(i)+'optimizador='+ str(optim)+'.csv')
             result_epoch.append(history['test'].iloc[-1])
-        predictions.to_csv('drive/My Drive/TFM/definitivo2/predictions.csv')
-        pyplot.savefig('drive/My Drive/TFM/definitivo2/epochs='+str(e) +'_batch ='+str(batches)+'_neurons=' + str(n_neurons) + '_activacion='+activation + 'optimizacion ='+optim+'.eps', format='eps', dpi=1000)   
+        predictions.to_csv('predictions.csv')
+        pyplot.savefig('epochs='+str(e) +'_batch ='+str(batches)+'_neurons=' + str(n_neurons) + '_activacion='+activation + 'optimizacion ='+optim+'.eps', format='eps', dpi=1000)   
         pyplot.show()
         results[str(e)] = result_epoch
-    results.to_csv('drive/My Drive/TFM/definitivo2/BP_epochs_diagnostic_epochs='+str(e)+'_batch ='+str(batches)+'_neurons=' + str(n_neurons) + '__activacion='+activation +'optimizacion ='+optim+'.csv')
+    results.to_csv('BP_epochs_diagnostic_epochs='+str(e)+'_batch ='+str(batches)+'_neurons=' + str(n_neurons) + '__activacion='+activation +'optimizacion ='+optim+'.csv')
     #results.boxplot()
     #pyplot.ylabel('MAPE')
     #pyplot.savefig('definitivo/BP_epochs_diagnostic_epochs='+str(e)+'_batch ='+str(batches)+'_neurons=' + str(n_neurons) + '__activacion='+activation + 'MV.png')
