@@ -1,0 +1,273 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+rm(list=ls())
+setwd("~/Documentos/Rstudio/TFM") #xq cada documento me cambia la ruta
+source("IPI_O.R")
+setwd("~/Documentos/Rstudio/TFM")
+```
+
+## Primer ploteado de datos
+
+```{r}
+plot.xts(IPI$`Índice general`, main = "Índice de producción Industrial")
+```
+
+
+```{r}
+# Base plot with date axis
+p <- ggplot(data = IPI, aes(x = date(IPI), y = coredata(IPI))) + 
+     geom_line(color = "#00AFBB", size = 1)
+# Set axis limits c(min, max)
+min <- as.Date("2002-1-1")
+max <- NA
+p  + stat_smooth(
+  color = "#FC4E07", fill = "#FC4E07",
+  method = "loess"
+  ) + scale_x_date(date_labels = "%b/%Y") 
+#+  theme_minimal()
+```
+
+
+```{r}
+length(IPI$`Índice general`)
+```
+
+#################################LA CORRELACIÓN
+
+
+```{r}
+ggAcf(IPI$`Índice general`)
+```
+
+
+#STUDY SEASONILITY (estos datos no son estacionales)
+para plotear por series
+º
+```{r}
+ggsubseriesplot(as.ts(IPI$`Índice general` )) #me dice que mis datos no son estacionales pero creo que simplemente el objeto ts está mañ hecho
+ggseasonplot(as.ts(IPI$`Índice general`, start(IPI), end = end(IPI)))
+```
+
+
+#detectar seasonality
+
+
+```{r}
+library("TSA")
+# Install and import TSA package
+ p = periodogram(IPI$`Índice general`)
+```
+
+```{r}
+dd = data.frame(freq=p$freq, spec=p$spec)
+order = dd[order(-dd$spec),]
+top2 = head(order, 2)
+ 
+# display the 2 highest "power" frequencies
+top2
+```
+
+```{r}
+# convert frequency to time periods
+time = 1/top2$f
+time
+```
+
+
+
+#NAIVE FORECAST
+
+PARADEJARME DE ROLLOS CREO LA VERSIÓN ts del IPI
+```{r}
+IPIts<-ts(IPI$`Índice general`, start =c(2002, 1), end = c(2018,7) , frequency = 12)
+```
+
+
+
+```{r}
+training<- window(IPIts,start=c(2002,1),end=c(2017,8))
+naive_IPI <- naive(training, h = 12)
+naive_IPI 
+```
+
+
+
+```{r}
+library(foreign)
+library(xtable)
+#library(stargazer)
+MAPE_NAIVE<-accuracy(naive_IPI, IPIts)["Test set", "MAPE"]
+MAPE_NAIVE
+
+acc<-accuracy(naive_IPI, IPIts)
+xtable(acc, type = "latex")
+```
+```{r}
+autoplot(naive_IPI) + autolayer(fitted(naive_IPI)) 
+```
+
+
+```{r}
+meanf(training, h=12)
+```
+
+
+```{r}
+autoplot(training) +
+  autolayer(meanf(training, h=12),
+    series="Mean", PI=FALSE) +
+  autolayer(naive(training, h=12),
+    series="Naïve", PI=FALSE) +
+  autolayer(rwf(training, drift=TRUE, h=12),
+    series="Drift", PI=FALSE)  +
+  ggtitle("Índice de Producción industrial") +
+  xlab("año") + ylab("index") +
+  guides(colour=guide_legend(title="Forecast"))
+```
+
+
+```{r}
+MAPE_mean<-accuracy( meanf(training, h = 12), IPIts)["Test set", "MAPE"]
+MAPE_mean
+```
+```{r}
+MAPE_drift<-accuracy( rwf(training, h = 12), IPIts)["Test set", "MAPE"]
+MAPE_drift
+```
+
+
+```{r}
+MAPE_naive<-accuracy( naive(training, h = 12), IPIts)["Test set", "MAPE"]
+MAPE_naive4.967424
+```
+
+
+
+
+#SIMPLE EXPONENTIAL SMOOTHING
+
+###Resumen a h= 10
+```{r}
+sesfc <- ses(training,  h = 12)
+summary(sesfc)
+
+```
+
+###Predicción a horizonte = 12
+
+```{r}
+autoplot(sesfc)
+```
+
+
+###Ajuste
+
+```{r}
+autoplot(sesfc) + autolayer(fitted(sesfc)) #veo como predoice el mode lo cada valor
+```
+
+
+##HOLTS METHOD 
+
+igual al simple exponential smoothing pero añadiendo la tendencia (trend)
+
+
+###Predicción de los 10 datos siguientes:
+```{r}
+fcholt <-  holt(IPI, h = 12)
+summary(fcholt)
+autoplot(fcholt)+ autolayer(fitted(fcholt))
+```
+
+
+
+#ARIMA MODEL
+ARIMA = autoregressive integrated moving average
+auto.arima() CREA UN MODELO ARIMA ÓPIMO (optimizando AIC) DE MANERA AUTOMÁTICA
+```{r}
+ar_model <-auto.arima(training)
+summary(ar_model)
+ar_model%>%forecast(h = 12)%>%autoplot()
+
+```
+
+###Residuo
+```{r}
+
+checkresiduals(ar_model) #MIS RESIDUOS NO SON WHITE NOISE
+
+```
+
+###forecast h = 12
+
+```{r}
+autoplot(ar_model)+ autolayer(fitted(ar_model))
+
+```
+# NNAR 
+Usando el mismo conjunto que uso con mis datos
+
+```{r}
+seriefc<-tail(IPI$`Índice general`,72)[1:60]
+train<-seriefc[1:48]
+test<-tail(seriefc,12)
+test_ts<-as.ts(test, start=48, end = 60)
+```
+
+
+```{r}
+?nnetar
+fit <- nnetar(train,size = 6, lambda=0,repeats = 50)
+fc<-forecast(fit,h=12)
+fc
+test_ts
+accuracy(fc,test_ts)
+```
+
+```{r}
+autoplot(forecast(fit,h=12))+
+  autolayer(test_ts,
+    series="test", PI=FALSE)
+
+```
+
+
+```{r}
+fc2<-forecast(fit,h=12, PI = TRUE)
+autoplot(fc2)+
+  autolayer(test_ts,
+    series="test", PI=FALSE)
+```
+```{r}
+accuracy(fc2, test)
+```
+
+
+
+         
+
+```{r}
+train<-IPI$`Índice general`[(nrow(IPI)-72):(nrow(IPI)-24)]
+validation<-IPI$`Índice general`[(nrow(IPI)-24):(nrow(IPI)-12)]
+test<-IPI$`Índice general`[(nrow(IPI)-12):(nrow(IPI))]
+set<-cbind.xts(train,validation,test)
+colnames(set)<-c("train","validation", "test")
+autoplot(set, main = "Índice de Producción Industrial",facets = NULL)
+
+```
+
+index(IPI$`Índice general`)[50])
+```{r}
+train<-IPI$`Índice general`[(nrow(IPI)-72):(nrow(IPI)-11)]
+#validation<-IPI$`Índice general`[(nrow(IPI)-24):(nrow(IPI)-12)]
+test<-IPI$`Índice general`[(nrow(IPI)-12):(nrow(IPI))]
+set<-cbind.xts(train,test)
+colnames(set)<-c("train", "test")
+autoplot(set, main = "Índice de Producción Industrial",facets = NULL)
+```
+

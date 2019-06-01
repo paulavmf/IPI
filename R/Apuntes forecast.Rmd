@@ -1,0 +1,90 @@
+---
+title: "Apuntes"
+author: "Paula"
+date: "19 de octubre de 2018"
+output: html_document
+---
+
+
+
+__AUTOCORRELATION is a measure of how much the data sets at one point in time influences data sets at a later point in time.__
+
+
+__LAG is essentially delay. Just as correlation shows how much two timeseries are similar, autocorrelation describes how similar the time series is with itself with that delay.__
+
+If timeseries comprises of completely random values, you will only have correlation at lag=0, and no correlation everywhere else. In most of the datasets/time series this is not the case, as values tend to decrease over time, thus having some correlation at low lag values.
+
+#Naive Forecast
+
+Use the most recent observation.
+
+This is the best that can be done for many time series including most stock price data, and even if it is not a good forecasting method, it provides a useful benchmark (punto de referencia) for other forecasting methods.
+
+For seasonal data, a related idea is to use the corresponding season from the last year of data.  This is implemented in the snaive() function, meaning, seasonal naive.
+
+naive(y, h = 10)
+
+
+h specifies the number of values you want to forecast; 
+
+
+The resulting output is an object of class forecast.
+
+##Residuo
+
+Diferencia entre el valor previsto y el valor real. Si se hace una gráfica del residuo a lo largo del tiempo este tiene que parecer white noise, osea, no puede estar correlacionado. Tienen que tener media = 0. (Gaussian White Noise)
+
+#RESIDUO VS ERROR
+
+ERROR = la diferencia entre el valor observado y su forecas en el TEST SET
+
+RESIDUOS  = errores en el training set
+          = se basan en one step forecast
+          
+ 
+#ARIMA MODEL 
+          
+##Stationarity and differencing
+
+Una series estacionaria es esa en la que sus propiedades no depende del momento en el que se observa __SERIES TEMPORACLES CON TENDENCIA O CON ETACIONALIDAD NO SON ESTACIONARIAS__.
+Un white noise es una serie temporal estacionaria. __Un serie temporal con ciclos__ (pero sin tres o estacionalidad) __es estacionaria__. (Porque los ciclos no tienen porque ser de una longitud determinada por lo que enrealidad no depende de la fecha).
+Differencing es pasar de una serie temporal no estacionaria a una estacionaria (aplicando logaritmo por ejemplo)
+
+
+##Modelo Autoregresivo (AR)
+
+Autoregresivo porque se usa una combinación de de valores pasados de la variables, osea, los valores anteriores de la time serie se usan para calcular los valores nuevos (más white noise) (lagged values of $y_T$ as a predictors) . En el caso de modelos regesivos los valores que se usan son otros, una combonación de pedictors.
+
+##Moving average models (MA)
+
+Usa los errores de las predicciones anteriores para crear el nuevo valor (el error siembre es white noise). each value of yt can be thought of as a weighted moving average of the past few forecast errors.
+
+we can write any invertible MA(q) process as an AR(∞) process
+
+##Non-seasonal ARIMA models
+
+ARIMA is an acronym for AutoRegressive Integrated Moving Average. Integra AR Y MA
+
+ARIMA(p,d,q)
+
+* p = order of the autoregressive part;
+* d = degree of first differencing involved;
+* q =  order of the moving average part.
+
+Casos especiales del modelo ARIMA
+
+* White noise 	ARIMA(0,0,0)
+* Random walk 	ARIMA(0,1,0) with no constant
+* Random walk with drift 	ARIMA(0,1,0) with a constant
+* Autoregression 	ARIMA(p,0,0)
+* Moving average 	ARIMA(0,0,q)
+
+##ARIMA VS ETS
+
+En realidad los ETS es un caso especial de las ARIMA
+
+#DINAMIC REGRESSION MODELS
+
+Uso Información de otra serie temporal para hacer mi forecast
+xreg argument incluiría esa información extra
+

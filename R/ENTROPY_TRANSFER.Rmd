@@ -1,0 +1,351 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+dir<-getwd()
+setwd(dir)
+rm(list=ls())
+#setwd("~/Documentos/Rstudio/TFM") #xq cada documento me cambia la ruta
+source("IPI_O.R")
+#setwd("~/Documentos/Rstudio/TFM")
+source("petroleo.R")
+##setwd("~/Documentos/Rstudio/TFM")
+##source("EIAP.R")
+#setwd("~/Documentos/Rstudio/TFM")
+source("tabla_energía.R")
+#setwd("~/Documentos/Rstudio/TFM")
+source("pob_ocupada.R")
+#setwd("~/Documentos/Rstudio/TFM")
+source("plots_IM.R")
+#setwd("~/Documentos/Rstudio/TFM")
+source("sup_construida.R")
+#setwd("~/Documentos/Rstudio/TFM")
+source("aloj_turisticos.R")
+```
+#TEORÍA PREVIA
+##Transferencia de información
+
+Una aproximación interesante al estudio del Índice de producción industrial es determinar que otros datos recabados por el Instituto Nacional de Estadística pueden darnos información acerca de dicho índice.
+
+Para ello existe toda una rama de la teoría matemática y las ciencias de la computación llamada teoría de la información. Esta teoría matemática de la comunicación fué creada por Cloude E. Shannon y Warren Weaver a finalles de la segunda guerra mundial como resultado de buscar la manera más eficiente de transmitir información.
+
+Partiendo de la entropía de Shannon: Suponiendo una variable discreta $I$ que cumple una distribución de probabilidad $p(i)$, el número de bits que necesita para codificarla de forma óptima es el siguiente (ref paper shannon 2002)
+
+$H_I = - \sum{p(i) log_2 p(i)}$
+names(ocupacion_aprox)<-paste("población 
+
+Una primera aproximación para estimar la cantidad de información que cierta variable $I$ nos aporta sobre $J$ es la información mutua:
+
+$M_{IJ}= \sum{p(i,j)log \frac{p(i,j)}{p(i)p(j)}}$.
+
+
+\\$p(i,j)$ es la probabilidad conjunta
+
+
+Esta es una medida simétrica y por tanto carece de un sentido de direccionalidad. 
+(Se le puede añadir un sentido de direccionalidad añadiedo la historia de uno de los parámetros)
+
+
+Siendo $I$ y $J$ dos variables aleatorias con una distribución de probabilidad $p(i)$ y $p(j)$ y una distribuación de probailidad conjunta $p(i,j)$ cuya estructura dinámica corresponde a la de una proceso de tipo Markov estacionario de orden $k$ 
+La propiedad de Markov implica  lo siguiente:
+$p(i_{t+1}|i_t,...,i_{t−k+1})=p(i_{t+1}|i_t,...,i_{t−k})$. 
+La probabilidad de observar el suceso $I$ en el estado $i$ en el momento $t+1$ condicionado a a las $k$ observaciones anteriores es igual a las condicionadas a las $k-1$ observaciones anteriores.
+Usando a partir de ahora la notación $i^{(k)} = (i_n,...,i_{n--k+1})$ 
+Usando la fórmula análoga a la información mutua, el número de bits que se precisan para codificar un estado del sistema conociendo k estados anteriores es dado por la siguiente fórmula.
+
+$h_I(k)=−∑ip(i_{t+1},i^{(k)}_t)⋅log(p(i_{t+1}|i^{(k)}_t)),$
+
+where $i^{(k)}_t=(i_t,...,i_{t−k+1}). h_J(l)$ can be derived analogously for process J.
+
+
+La mejor manera de desarrollar una medida de información mutua en procesos dinámicos es calcular la desviación desde la independicia. Esto se consigue midiendo la desviación de la propiedad de Markov (ecuación de abajo) mdiante la enrtopía de Kullback, la transfere
+$(i_{n+1}|i^{(k)}_n) = p(i_{n+1}|i_n^{(k)},j_n^{(l)})$
+
+La entropía de Kulback es la cantidad de bits de más que se necesitan para codificar $I$ si en vez de la distribución de probabilidades $p(i)$ se usa la $q(i)$
+
+$T_{j->I} = \sum p(i_{n+1})log(\frac{p(i_{n+1}|i_n,...,i_{n--k+1}, j_n)}{p(i_{n+1}|i_n,...,i_{n--k+1})})$
+
+$T_{j->I}$ mide el flujo de información de $J$ a $I$
+
+
+
+### Transferencia Efectiva de Infomración
+
+###Eliminación del Sesgo por efecto de muestras demasiado pequeñas
+
+Para eliminar el sesgo debido a un tamaño demasiado pequeño de muestra se calculan sucesivas transferencias de información para una versión barajada de la serie temporal $T_{j_{shuffled}->I}$, esta transferencia de información converge hacia el cero a medida que el tamaño de la muestra aumenta. Para calcular la transferencia de entropía efectiva se calcula la media de todos los cálculos de $T_{j_{shuffled}->I}$ y se resta a la transferencia de entropía para así obtener una medida corregida.
+
+###Cálculo de p-value
+
+Para poder aproximar el significado estadístico de la transferencia de entropía se usa el método de "Markov block bootstrap". Este método permite hacer remuestreo aleatorio con reemplazamiento respetando las dependencias dentro de la serie temporal.
+De esta manera, se calcula una distribución de transferencias de entropía bajo la hipótesis nula de la 0 transferencia de información. Estas series temporales creadas retienen las dependencias entre la serie temporal $J$ pero elimina la dependencia estadística entre $J$ e $I$.
+Se obtiene la distribución de transferencia de entropía siendo la hipótesis nula el flujo nulo de entropía.
+El p-value asociado hasta hipótesis nula se ibtiene mediante $1-\^{q}_{TE}$ donde $\^{q}$ es el cuartil de la transferencia de entropíade la serie temporal original
+
+
+#ESTUDIO
+
+
+Para se crea una sola tabla con todos las tablas con las quese va a estudiar la transferencia de entropía existente con el Índice de producción industrial.
+
+```{r}
+conjunto2<-cbind(cbind.xts(EN,`colnames<-`(consumo_gas,paste("consumo",colnames(consumo_gas)))),precio_gas)
+conjunto2<-cbind.xts(conjunto2,ocupacion_aprox)
+conjunto2<-cbind.xts(conjunto2,turismo)
+conjunto2<-cbind.xts(conjunto2,sup_construida)
+colnames(conjunto2)
+head(conjunto2)
+
+
+```
+
+
+En primer lugar se usará la entropía de Shannon para estudiar la transferencia de entropía a desde el índice de producción industrial a cada una de las tablas mencionadas y viceversa.
+Los datos a comparar deben ser estacionarios, por  ello, en realidad se está calculando la transferencia d entropía entre las diferencias de cada una de las series temporales.
+Dat
+
+##p-VALUES
+Para comenzar se comparará  el p-value de todas los tablas con el IPI general para, en un primer momento, descartar las que den un p-value demasiado alto y hacer un estudio más detallado de las que resulten más interesantes
+
+En la gráfica número 1 se representan los distintos valores de p-value
+
+```{r}
+compara(conjunto2,IPI$`Índice general`)
+```
+
+Ipi aporta información:
+sobre el consumo de gasolina, la población ocupada
+
+
+datos que aportan información sobre el IPI
+* consumo de gasolina
+* licitaciones de obra
+* producción EL
+* EL disponible
+
+estos 4 datos formarán el conjunto a utilizar para el forecasting multivariado
+
+```{r}
+conjuntofc<-cbind.xts(EN$`Energía eléctrica disponible`, EN$`Producción bruta de energía eléctrica`)
+conjuntofc<-cbind.xts(conjuntofc, consumo_gas$GASOLINA)
+conjuntofc<-cbind.xts(conjuntofc, sup_construida)
+conjuntofc<- cbind.xts(conjuntofc, IPI$`Índice general`)
+conjuntofc<-conjuntofc[paste(start(IPI$`Índice general`), end(IPI$`Índice general`), sep = "/")]
+write.csv(as.data.frame(conjuntofc), "conjuntofc.csv", row.names = TRUE)
+
+```
+
+```{r}
+conjuntofake<-cbind.xts(EN$`Consumo de energía eléctrica`, precio_gas)
+conjuntofake<-cbind.xts(conjuntofake, consumo_gas$FUELÓLEO)
+conjuntofake<-cbind.xts(conjuntofake, sup_construida)
+conjuntofake<- cbind.xts(conjuntofake, IPI$`Índice general`)
+conjuntofake<-conjuntofake[paste(start(IPI$`Índice general`), end(IPI$`Índice general`), sep = "/")]
+write.csv(as.data.frame(conjuntofake), "conjuntofcfake.csv", row.names = TRUE)
+```
+
+Ipi aporta información:
+sobre el consumo de gasolina, la población ocupada
+
+
+##Estudio por periodos.
+
+
+
+Teniendo en cuenta los distintos periodos en los que se puede  separar la economía española en los últimos 15 años, se realizará el mismo estudio por períodos:
+
+* Período de 2002-2008 Subida
+* Perído de 2008- 2015 Crisis
+* Período 2008-actual
+
+```{r}
+periodo1<-"2002-01-01/2007-12-01"
+periodo2<-"2008-01-01/2015-12-01"
+periodo3<-"2016-01-01/2018-06-01"
+periodos = c(periodo1,periodo2,periodo3)
+```
+
+
+
+###Período 2002-2008
+
+
+```{r}
+compara(subset(conjunto2, select = -c(Alojamientos.turísticos.abiertos))[periodo1],IPI$`Índice general`[periodo1])
+```
+
+Influyentes periodo 1 : 
+1. Consumo de Gasolina
+2. Consumo de Fueloleo
+
+
+```{r}
+compara(conjunto,IPI$`Índice general`[periodo1])
+```
+
+
+###Periodo 2009-2015
+
+
+
+```{r}
+compara(conjunto2[periodo2],IPI$`Índice general`[periodo2])
+```
+
+
+Influyentes Periodo 2:
+1. Consumo de energía elecrica
+2. Energía electrica disponible
+3. Producción bruta de energía eléctrica
+
+el IPI Influyen en:
+la población ocupada y el precio del petropeo
+
+
+### Período 2015 actual
+Para este período hay un problema con el consumo de fuelóleo... no sé que ocurre tendría que ver bien la función de transfer entropy...
+pero por ahora simplemente me lo voy a quitar de en medio
+
+
+```{r}
+conjunto3<-subset(conjunto2, select = -c(consumo.FUELÓLEO))
+```
+
+```{r}
+compara(conjunto3[periodo3], IPI$`Índice general`[periodo3])
+```
+Influyentes Periodo 3:
+1. Energía meléctrica disponible
+2. Producción de energía eléctrica
+3. Consumo de energía eléctrica
+el IPI Influye en:
+los alojamientos turísticos abiertos
+la población ocupada
+
+
+
+###COMPARATIVA DE TODOS LOS ERIODOS EN UN MISMO PLOT
+
+
+
+
+
+Obviando el consumo de fueloleo xq da problema en el tercer periodo y también los alojamientos turísticos abiertos..(tengo que solucionar esto)
+
+```{r}
+conjunto4<-subset(conjunto3, select = -c(Alojamientos.turísticos.abiertos))
+compara_periodos(conjunto4,IPI$`Índice general`,periodos)
+```
+
+####Influyentes periodo 1 : 
+1. Consumo de Gasolina
+2. Consumo de Fueloleo
+
+
+####Influyentes Periodo 2:
+1. Consumo de energía elecrica
+2. Energía electrica disponible
+3. Producción bruta de energía eléctrica
+
+el IPI Influyen en:
+la población ocupada y el precio del petropeo
+
+####Influyentes Periodo 3:
+1. Energía meléctrica disponible
+2. Producción de energía eléctrica
+3. Consumo de energía eléctrica
+el IPI Influye en:
+los alojamientos turísticos abiertos
+la población ocupada
+
+CREO UN CONJUNTO CON LOS DATOS MÁS INFLUYENTES DURANTE LOS DOS ÚLTIMOS PERIODOS, YA QU E PARA REALIZAR EL FORECASTING SOLO VOY A UTILIZAR DESDE EL 2012
+```{r}
+conjuntofc<-cbind.xts(EN$`Consumo de energía eléctrica`, EN$`Energía eléctrica disponible`)
+conjuntofc<-cbind.xts(conjuntofc, EN$`Producción bruta de energía eléctrica`)
+conjuntofc<- cbind.xts(conjuntofc, IPI$`Índice general`)
+conjuntofc<-conjuntofc[paste(start(IPI$`Índice general`), end(IPI$`Índice general`), sep = "/")]
+write.csv(as.data.frame(conjuntofc), "conjuntofc2.csv", row.names = TRUE)
+```
+
+
+
+Se ve claramente que no existe demasiada diferencia entre los factores que influían al índice de producción industrial durante los dos últimos periodos. Es decir, valores azules están siempre cerca de los verdes sobre todo en valores bajos de p-value mientras que el valor en rosa de dispara .
+Lo que quiere decir que se ha cambiado de época, ha habido un gran cambio, ya no es tan importante el consumo de petrñoleo...
+Ya no se depende del gasóleo?... xq el consumo de gasóleo se ha diversificado y la entrada de renovables??
+Resulta también curioso ver cómo durante los años anteriores a la crisis el IPI no influía en la ocupación de empleo en Canarias mientras que después de la crisis sí existía una influencia
+
+
+
+
+
+
+
+##Cálculo de la Transferencia de p-value y entropía entre todas la series temporales
+
+
+```{r}
+conjunto_conjunto(conjunto2)
+```
+
+
+Misma información en una sola gráfica:
+
+
+```{r}
+conjunto_conjunto2(conjunto3)
+```
+
+###Durante el periodo 2002-2008
+no existen datos sobre a alojamiento tutístico ni licitaciones de obra para estos periodos. Ambos datos comienzan en 2009
+
+```{r}
+
+conjunto3<-subset(conjunto2, select = -c(Alojamientos.turísticos.abiertos))
+conjunto_conjunto2(conjunto3[periodo1])
+
+```
+
+datos que presentan una transferencia de entropía durante el periodo 2002-2008, antes de la crisis:
+Produccion E L -> Consumo de E L, consumo de gasoleo
+consumo gasóleo-> consumo de gasolina
+consumo gasolina -> precio del barril de petro
+precio de petroleo -> consumo E L
+energía eléctrica disponible -> consumo de energía eléctrica
+
+Energía electroca dispo ->consumo de energía eléctrica , población ocupada
+Producción de enerrgía eléctrica -> consumo de E L , Consumo de gasóleo
+consumo gasóleo -> consumo gasolina
+consumi gasolina-> precio del barril
+
+###Durante el periodo 2008-2015
+```{r}
+conjunto_conjunto2(conjunto2[periodo2])
+```
+
+los consumos de gasolina y gasoleo dan info sobre la producción (casusa ok)
+
+consumo de gasolina causa de la producicón y del preción
+alojamientos turísticos abiertos causa de  producción
+superficie a construir causa de población ocuapada
+
+energía eléctrica disponible -> producción (mmm)
+lic de obras-> pob ocupada
+alijamientos turísticos-> precio barril
+precio barril -> consumo
+consumi energía-> consumo gasóleo
+###Durante el periodo 2015-2018
+```{r}
+conjunto_conjunto2(conjunto2[periodo3])
+```
+
+EL disponible, Producción EL, consumo de energía eléctrica -> consumo de GASOLINA
+consumo gasolina ->  pob_ocupada alojamientos turísticos abiertos y superficie a construir.... eto ya es más loco
+pob-_ocupada -> alojamientos tuísticos abiertos y lic de obra
+EL disponible-> consumo gasolina pob ocupada, 
+consumo de energía eléctrica -> consumo de gasolina y población ocupada
+
+
+
+

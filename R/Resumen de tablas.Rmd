@@ -1,0 +1,1692 @@
+---
+title: "lista de tablas"
+author: "Paula"
+date: "14 de octubre de 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Territorio y medio ambiente
+
+
+##Territorio y usos del suelo
+
+
+### Estadística del Territorio
+Estas tablas son datos, no son temporales
+
+    - 01 Superficie por islas.
+    - 02 Superficie por principales islotes.
+    - 03 Número y superficie de los roques por islas.
+    - 04 Superficie según zonas altimétricas por provincias.
+    - 05 Número de municipios según superficie por islas.
+    - 06 Altitud máxima y longitud de las costas por islas.
+    - 07 Longitud de las costas según constitución física por islas.
+    - 08 Superficie, perímetro, longitud de costa, altitud y distancia a la capital por municipios. 
+
+## Medio ambiente
+
+
+###   Recopilación de Estadísticas sobre el Agua *interesante*
+
+series anuales 1996-2014
+
+      - 01 Indicadores sobre suministro y tratamiento de agua por años.
+      - 02 Captación de agua realizada por la propia empresa según tipos de recurso hídrico por años.
+      - 03 Disponibilidad total de agua según indicadores por años.
+      - 04 Distribución del agua según destinos por años
+      - 05 Recogida y tratamiento de las aguas residuales según indicadores por años.
+      - 06 Características de las aguas residuales antes y después de los tratamientos según indicadores por años.
+
+
+
+###   Recopilación de Estadísticas sobre los Residuos 
+(Series anules 2002-2015)
+    Residuos
+     -   01 Cantidad per cápita de residuos recogidos según tipos de residuo por años.
+      -  02 Residuos urbanos recogidos según tipos de residuo por años.
+      -  03 Residuos generados por el sector industrial según tipos de residuo y peligrosidad por años.
+      -  04 Vidrio recogido de contenedores y contenedores instalados por municipios y años.
+    Reciclaje en los hogares
+      -  05 Hogares según tipos de residuo y frecuencia de separación por islas y años.
+      -  06 Hogares que no reciclan según tipos de residuo y motivos por años.
+
+###   Estadística de Espacios Naturales Protegidos 
+(datos de superficie por tipo e isla) NO ES UNA SERIE TEMPORAL
+###   Estadística de Incendios Forestales en Canarias
+(Series anuales 2000-2015)
+      
+       - 01 Número de incendios y superficie forestal quemada en Canarias por años.
+       - 02 Número de incendios y superficie forestal quemada por islas y años.
+       - 03 Número de incendios y superficie forestal quemada según tamaño del incendio por islas y años.
+       - 04 Número de incendios según causas por islas y años.
+       - 05 Número de incendios según meses por islas y años.
+       - 06 Número de incendios según hora de detección por islas y años.
+
+###    Estadística de Vigilancia Ambiental
+
+	    - Expedientes abiertos según tipos de infracción por islas y años. (en número de infracciones/islas*año. Series anuales 1999-2017)
+	    Infracciones:
+    	    	+ED.L. 1/2000. Constructivas
+            +D.L. 1/2000. No constructivas
+            +Ley de costas
+            +Vertidos al mar
+            +Residuos (incluye RP y AU)
+            +Impacto
+            +Ley de envases
+            +Cetáceos
+            +Parcelaciones
+            +Parques zoológicos
+            +Extracción de áridos
+            +Ley de prevención de la contaminación
+            +Actividades potencialmente contaminantes de la atmósfera
+            +Patrimonio natural y biodiversidad 
+	        
+###    Estadística de Caza 
+
+        - Licencias de caza expedidas según tipos de licencia por islas. (2007-2016)(nº/tipo)
+        - Resultados de las pruebas de aptitud para el ejercicio de la caza según convocatorias por islas de Canarias y periodos. (2005-2016)(aptos, nos aptos...)
+        
+        
+         
+        
+
+# Demografía
+
+## Población (ANUALES)
+
+### Explotación Estadística del Padrón Municipal
+  RESULTADOS 1-1-2018 (Nº DE PERSONAS)
+  
+    -01 Según sexos y grupos de edad.
+    -02 Según sexos y lugares de nacimiento.
+    -03 Según sexos y nacionalidad en detalle.
+    -04 Según sexos, nacionalidades y grupos de edad. 
+  
+ 
+  
+  
+  POR ISLAS/COMARCAS/MUNICIPIOS Y AÑOS ( RESULTADOS 2000-2017)
+  
+    - 01 Población según sexos y grupos de edad grandes y quinquenales.
+    - 02 Población según sexos y edades año a año.
+    - 03 Población según sexos y lugares de nacimiento.
+    - 04 Población según sexos y lugares de nacimiento en detalle insular.(SOLO POR ISLAS)(SE REFIERE A QUE ESPECIFICA EN QUE OTRA ISLA NACIERON)
+    - 05 Población según sexos y países de nacimiento.
+    - 06 Población según sexos y países de nacimiento en detalle.(SOLO POR ISLAS)
+    - 07 Población según sexos y nacionalidades.
+    - 08 Población según sexos y nacionalidades en detalle.(SOLO POR ISLAS)(DETALLA EL PAÍS DE NACIONALIDAD)
+    - 09 Población extranjera según sexos y grupos de edad.
+    - 10 Población extranjera según sexos y países de nacimiento. 
+
+  Entidades de Población. 2000-2017 (TABLA POR ISLA)
+   
+    - Población según sexos. Entidades singulares y núcleos o diseminados.
+    - Población según sexos y grupos de edad. Entidades singulares y núcleos o diseminados.
+    - Población según sexos y edades año a año. Entidades singulares.
+    - Población según sexos y país de nacimiento. Entidades singulares.
+    - Población según sexos y nacionalidades. Entidades singulares.
+    - Población extranjera según sexos y grupos de edad. Entidades singulares y núcleos o diseminados.
+    - Población extranjera según sexos y país de nacimiento. Entidades singulares.
+    
+  Población, variaciones y densidades por islas. Resultados anuales. 1991-2017
+  
+    - 01 Población según indicadores. Islas y años.
+      Indicadores:
+         + Cifras absolutas
+         + Tasas de variación interanual
+         + Porcentajes sobre el total de Canarias 
+       
+    - 02 Densidad de población según indicadores. Islas y años. (solo habitantes por km2. No hay más indicadores)
+    
+    
+
+### Cifras Oficiales de Población
+    - Series anuales. islas/Municipios/comunidades autónomas . 2000-2017 Según indicadores
+        + Cifras absolutas
+        + Porcentajes sobre el total de Canarias
+        + Variación interanual
+        + Tasas de variación interanual 
+
+
+### Indicadores demográficos 
+
+(1996-2017) Anuales
+
+
+      - Edades medias de la población Municipios o islas/ años
+      - Índices de juventud, vejez y dependencia por municipios y años (porcentaje)
+      - Indicadores demográficos por islas y años (Nacimientos/ Matrimonios/ defunciones)
+      
+          Indicadores:
+          + Tasas Brutas
+          + Edades medias..
+          + Tasas de mortalidad infantil
+       
+
+    
+### Censos de Población y Viviendas
+ (montón de datos del 2011 y del 2001)
+ 
+ 
+### Estadística de la Evolución Histórica de la Población
+ (datos anuales 1768-2017) 
+ 
+Datos anuales solo a partir de los 80, antes de eso varían entre cada 3 años o 10 años
+
+     - Población. Municipios por islas y años.nº perdonas/año /Minicipio 
+     - Hogares. Municipios por islas y años.
+     - Tamaño medio de los hogares. Municipios por islas y años. (peronas/hogar)
+  
+### Proyecciones de la población en Canarias
+ (Series anuales. Comarcas por islas de Canarias. 2004-2019)
+ 
+¿Se supone que la proyección se realiza cada año anterior, supongo?
+
+      - 01 Hipótesis.
+      
+            Indicadores:
+                + Indice sintético de fecundidaD *qué es un índice síntético??*
+                + Edad media a la maternidad (EMM)
+                + Nacimientos
+                + Esperanza de vida al nacer de los hombres
+                + Esperanza de vida al nacer de los mujeres
+                + Defunciones
+                + Saldo vegetativo (Es la diferencia entre los nacimientos y las defunciones de una determinada población)
+                + Altas desde el extranjero
+                + Altas desde otras CC.AA.
+                + Indicador sintético de migración (otras CC.AA.) 
+                
+      - 02 Según sexos por grandes comarcas y años. (nº personas)
+      - 03 Según sexos y edades año a año por grandes comarcas y años. (nº personas)
+    
+
+## Movimiento Natural
+
+### Estadística de Nacimientos (Series anuales 1999-2016)
+      - 01 Según sexos de los nacidos y municipios de residencia de las madres por años.
+      - 02 Según nacionalidades e islas de residencia de las madres por años.
+      - 03 Según nacionalidades de ambos padres e islas de residencia de las madres por años.
+      - 04 Según sexos de los nacidos, meses de los partos e islas de residencia de las madres por años.
+      - 05 Según grupos de edad de los padres e islas de residencia de las madres por años.
+      - 06 Según estados civiles e islas de residencia de las madres por años.
+      - 07 Según normalidad de los partos e islas de residencias de las madres por años.
+      - 08 Según partos prematuros e islas de residencias de las madres por años.
+      - 09 Según semanas de gestación por años. Canarias.
+      - 10 Según lugares de los partos por años. Canarias.
+      - 11 Según numero de hijos nacidos en los partos por años. Canarias.
+      - 12  Según tipo de partos e islas de residencia de las madres por años.
+      - 13 Según tipo de partos y grupos de edad de las madres por años. Canarias.
+      - 14 Edades medias de ambos padres según islas de residencia de las madres por años.
+      - 15 Edades medias de las madres según nacionalidades por años. Canarias.
+      - 16 Edades medias de las madres según estados civiles e islas de residencia de las madres por años
+      - 17 Tasas brutas de natalidad según islas de residencia de las madres por años.
+  
+      - Nombres más comunes (1997-2016)
+
+### Estadística de Matrimonios
+(Series anuales 1999-2016)
+
+### Estadística de Defunciones
+ (Series anuales. Islas. 1991-2016)
+      -tablas: según sexo, municipio, meses de fallecicimiento, estados civiles, nacionalidades..
+      
+### Estadística del Crecimiento vegetativo
+(Series anuales. Islas. 1999-2016) 
+
+	    - 01 Crecimiento vegetativo. Municipios por islas y años.
+      - 02 Tasas brutas de crecimiento vegetativo. Islas y años.
+      - 03 Crecimiento vegetativo según meses. Islas y años. 
+
+## Movimientos Migratorios
+ 
+### Estadística de Variaciones Residenciales 
+(Series anuales. Municipios. 1988-2017)
+      	
+      Tablas resumen
+          01 Variaciones residenciales según sexos, grupos de edad y tipos de variaciones. Islas y años.
+          02 Variaciones residenciales según sexos, lugares de nacimiento y tipos de variaciones. Islas y años.
+          03 Variaciones residenciales según sexos, nacionalidades y tipos de variaciones. Islas y años.
+      Migraciones interiores (Altas y bajas de un municipio canario a otro)
+          04 Saldo migratorio interior según sexos. Municipios por islas y años.
+          05 Migraciones interiores según sexos y municipios de procedencia y destino. Municipios por islas y años.
+          06 Migraciones interiores según sexos, islas de procedencia y destino y grupos de edad. Islas y años.
+          07 Migraciones interiores según sexos, islas de procedencia y destino y lugares de nacimiento. Islas y años.
+          08 Migraciones interiores según sexos, islas de procedencia y destino y nacionalidades. Islas y años.
+          09 Migraciones interiores según sexos y edades año a año. Canarias y años.
+          10 Migraciones interiores según sexos y lugares de nacimiento en detalle. Canarias y años.
+          11 Migraciones interiores según sexos y nacionalidades en detalle. Canarias y años.
+          12 Migraciones interiores dentro de la misma isla según sexos y grupos de edad. Islas y años.
+          13 Migraciones interiores dentro de la misma isla según sexos y lugares de nacimiento. Islas y años.
+          14 Migraciones interiores dentro de la misma isla según sexos y nacionalidades. Islas y años.
+          15 Migraciones interiores entre islas según sexos, islas de procedencia y destino y grupos de edad. Islas y años.
+          16 Migraciones interiores entre islas según sexos, islas de procedencia y destino y lugares de nacimiento. Islas y años.
+          17 Migraciones interiores entre islas según sexos, islas de procedencia y destino y nacionalidades. Islas y años.
+      Migraciones exteriores con el resto de comunidades autónomas de España
+          18 Saldo migratorio exterior con el resto de CC.AA. según sexos. Municipios por islas y años.
+          19 Altas según sexos, CC.AA. de procedencia y municipios de destino. Municipios por islas y años.
+          20 Altas según sexos, CC.AA. de procedencia, islas de destino y lugares de nacimiento. Islas y años.
+          21 Altas según sexos, CC.AA. de procedencia, islas de destino y nacionalidades. Islas y años.
+          22 Altas según sexos y edades año a año. Canarias y años.
+          23 Altas según sexos y lugares de nacimiento en detalle. Canarias y años.
+          24 Altas según sexos y nacionalidades en detalle. Canarias y años.
+          25 Bajas según sexos, CC.AA. de destino y municipios de procedencia. Municipios por islas y años.
+          26 Bajas según sexos, CC.AA. de destino, islas de procedencia y lugares de nacimiento. Islas y años.
+          27 Bajas según sexos, CC.AA. de destino, islas de procedencia y nacionalidades. Islas y años.
+          28 Bajas según sexos y edades año a año. Canarias y años.
+          29 Bajas según sexos y lugares de nacimiento en detalle. Canarias y años.
+          30 Bajas según sexos y nacionalidades en detalle. Canarias y años.
+      Migraciones exteriores con el extranjero
+          31 Saldo migratorio exterior con el extranjero según sexos. Municipios por islas y años.
+          32 Altas según sexos, continentes de procedencia y municipios de destino. Municipios por islas y años.
+          33 Altas según sexos, países de procedencia, islas de destino y lugares de nacimiento. Islas y años.
+          34 Altas según sexos, países de procedencia, islas de destino y nacionalidades. Islas y años.
+          35 Altas según sexos y edades año a año. Canarias y años.
+          36 Altas según sexos y lugares de nacimiento en detalle. Canarias y años.
+          37 Altas según sexos y nacionalidades en detalle. Canarias y años.
+          38 Bajas según sexos, continentes de destino y municipios de procedencia. Municipios por islas y años.
+          39 Bajas según sexos, países de destino, islas de procedencia y lugares de nacimiento. Islas y años.
+          40 Bajas según sexos, países de destino, islas de procedencia y nacionalidades. Islas y años.
+          41 Bajas según sexos y edades año a año. Canarias y años.
+          42 Bajas según sexos y lugares de nacimiento en detalle. Canarias y años.
+          43 Bajas según sexos y nacionalidades en detalle. Canarias y años.
+          44 Bajas por caducidad según sexos y edades año a año. Canarias y años.
+          45 Bajas por caducidad según sexos y lugares de nacimiento en detalle. Canarias y años.
+          46 Bajas por caducidad según sexos y nacionalidades en detalle. Canarias y años.
+      Saldos migratorios
+          47 Saldo migratorio según sexos. Municipios por islas y años.
+          48 Saldo migratorio según sexos y grupos de edad. Islas y años.
+          49 Saldo migratorio según sexos y lugares de nacimiento. Islas y años.
+          50 Saldo migratorio según sexos y nacionalidades. Islas y años.
+
+
+
+# Sociedad
+
+  
+##Calidad de Vida
+
+### Encuesta de ingresos y condiciones de vida de los hogares canarios (EICV-HC)
+      - EICV-HC 2013 (tablas solo 2013)
+      - EICV-HC 2007
+      - EICV-HC 2004
+      - Comparativas de las Encuestas de Condiciones de Vida(EICV-HC) 2001-2013 (resultados para 2013,2007,2004,2001 en una mista tabla)
+          	01 Características y equipamientos de las viviendas por comarcas, capitales de provincia y años.
+            02 Composición y características de los hogares por comarcas y años.
+            03 Índices de juventud, vejez y dependencia por comarcas y años.
+            04 Personas que declaran limitación de la actividad cotidiana por islas y años.
+            05 Población de 16 y más años según nivel de estudios por comarcas y años.
+            06 Indicadores de empleo según comarcas, capitales de provincia y años.
+            07 Indicadores de pobreza según comarcas, capitales de provincia y años.
+            08 Indicadores de ingresos según comarcas, capitales de provincia y años.
+            09 Hogares según clasificación social subjetiva por comarcas y años.
+            10 Población de 16 y más años según vacaciones en los últimos 12 meses por comarcas y años.
+            11 Población de 16 y más años que ha cambiado de municipio de residencia por comarcas, capitales de provincia y años.
+            12 Valoración de los equipamientos del entorno según tipos de equipamiento por años.
+            13 Hogares según tipos de residuo y frecuencia de separación por islas y años.
+            14 Hogares que no reciclan según tipos de residuo y motivos por años.
+            15 Tamaños muestrales según tipos de muestra por comarcas, capitales de provincia y años. 
+          
+### Encuesta de Condiciones de Vida (ECV) 
+(Series anuales: 2013-2016)
+              	
+              Formación, trabajo y salud
+              01 Personas de 16 y más años según nivel de estudios, sexos y años.
+              02 Personas de 16 y más años según nivel de estudios, grupos de edad y años.
+              03 Personas de 16 y más años según nivel de estudios, relación con la actividad y años.
+              04 Personas de 16 y más años según relación con la actividad, sexos y años.
+              05 Personas de 16 y más años según relación con la actividad, grupos de edad y años.
+              06 Personas de 16 y más años según autovaloración del estado de salud, sexos y años.
+              07 Personas de 16 y más años según autovaloración del estado de salud, grupos de edad y años.
+              08 Personas de 16 y más años según grados de limitación por padecer algún problema de salud, sexos y años.
+              Vivienda, instalaciones y equipamiento
+              09 Hogares según regímenes de tenencia de la vivienda, sexos de la persona de referencia y años.
+              10 Porcentaje de hogares según problemas de la vivienda y su entorno por años.
+              11 Hogares según disponibilidad de equipamientos de la viviendas por años.
+              Renta y pobreza
+              12 Percentiles de renta disponible (año anterior al de la entrevista) por hogar y años.
+              13 Percentiles de renta disponible (año anterior al de la entrevista) por persona, unidad de consumo y años.
+              14 Umbral de pobreza por tipo de hogar y años.
+              15 Tasa de riesgo de pobreza por comunidades autónomas y años.
+              16 Hogares según situación de pobreza, sexos, grupos de edad de la persona de referencia y años.
+              17 Hogares según situación de pobreza, grados de urbanización de la vivienda y años.
+              18 Hogares según situación de pobreza, tamaño del hogar y años.
+              19 Personas según situación de pobreza, sexos, grupos de edad y años.
+              20 Personas de 16 y más años según situación de pobreza, niveles de estudios y años.
+              21 Personas de 16 y más años según situación de pobreza, relación con la actividad y años.
+              Riesgo de pobreza o exclusión social (estrategia Europa 2020)
+              22 Tasa de riesgo de pobreza o exclusión social (estrategia Europa 2020) por comunidades autónomas y años.
+              23 Personas en riesgo de pobreza o exclusión social (estrategia Europa 2020) por sexos, grupos de edad y años.
+              24 Personas según carencia material severa por sexos y años.
+              25 Personas según carencia material severa por grupos de edad y años.
+              26 Personas de menos de 60 años según viven en hogares sin empleo o con baja intensidad en el empleo por sexos y años.
+              Dificultades para llegar a fin de mes
+              27 Hogares según capacidad para llegar a fin de mes y años.
+              28 Personas según capacidad para llegar a fin de mes por sexos y años.
+              29 Personas de 16 y más años según capacidad para llegar a fin de mes, relación con la actividad y años.
+              30 Hogares según valoración de la carga de los gastos de la vivienda por años.
+              Carencia material
+              31 Porcentaje de hogares según carencia material y años. 2004-2016.
+              32 Porcentaje de hogares según carencia material en un determinado número de conceptos (estrategia Europa 2020) por años. 2004-2016.
+              33 Porcentaje de personas según carencia material y años. 2004-2016.
+              34 Porcentaje de personas según carencia material, sexos y años.
+              35 Porcentaje de personas según carencia material en un determinado número de conceptos (estrategia Europa 2020) por años. 2004-2016.
+
+  
+### Encuesta de Condiciones Sociales de la Población Canaria (solo resultados del 2001)
+
+## Salud
+
+### Encuesta de Salud de Canarias (ESC) 
+(tablas comparativas 2004-2009-2005)
+
+### Encuesta de Salud e Ingresos de Canarias (ESI)
+(Resultados solo para 2004)
+
+           - Hábitos de vida
+           - Actividades preventivas y/o de riesgo
+           - Autovaloración del estado de salud
+           - Morbilidad
+           - Utilización de servicios sanitarios
+           - Opinión de la población sobre la sanidad canaria
+
+
+### Sistema de información de atención primaria en el Sistema Nacional de Salud (SIAP) 
+(Series anuales 2004-20016)
+
+        El SIAP proporciona información sobre la población asignada a los centros de atención primaria, la dotación de centros y personal, y la actividad desarrollada por este nivel de atención.
+
+### Estadística de Profesionales Sanitarios Colegiados 
+(Series anuales. 1997 - 2015)
+
+        - Profesionales sanitarios según tipos de profesional y sexos.
+    
+        
+### Establecimientos Sanitarios con Régimen de Internado (ESCRI)
+(Series anuales. Canarias. 1995-2009)
+
+### Estadística de Listas de Espera en Canarias 
+(Series semestrales. Islas. 2003 Septiembre – 2017 Junio)
+
+### Encuesta de Morbilidad Hospitalaria (EMH)
+(Anuales 2008-2015)
+
+      Indica porqué ingresa la  gente en los hospitales (datos de giagnósticos etc)
+      
+### Indicadores Farmacéuticos
+ (Series mensuales. Canarias. 2003 Enero – 2017 Agosto)
+ 
+        Recetas y gasto farmacéutico por habitante
+        
+### Análisis de la Mortalidad 
+(Series anuales. Municipios. 1999-2016)
+
+      Número de defunciones residentes y no residentes. Datos de suicidios y datos de ahogamiento.. Esperanzadas de vida
+      
+### Recopilación de Estadísticas sobre Donaciones y Trasplantes de Órganos 
+(Series anuales. 2000-2017)
+
+## Educación
+
+Infraestructuras educativas. Recursos humanos, financieros y materiales destinados a la prestación de servicios educativos. Uso de estos recursos por parte de la población. Grados de formación alcanzados por la población.
+
+### Estadística de las Enseñanzas no Universitarias: Resultados anuales.
+(Series anuales. 1990-2018 , por curso)
+              Régimen general/ Régimen especial/Alumnado extranjero
+                  14 Alumnado según sexos, titularidad/financiación de los centros, enseñanzas y cursos.
+                  15 Tasas de idoneidad del alumnado según sexos, edades y cursos.
+                  16 Alumnado que terminó estudios según sexos, enseñanzas y cursos.
+                  17 Profesorado según sexos, titularidad de los centros y cursos.
+             
+
+### Estadística de Inserción Laboral 
+
+(2011/2017 Según trimestre) Series de Formación Profesional Pública en Canarias 
+
+          -ACTIVIDADES FÍSICAS Y DEPORTIVAS
+          --Conducción de Actividades Físico-deportivas en el Medio Natural
+          -ADMINISTRACIÓN Y GESTIÓN
+          --Gestión Administrativa
+          -AGRARIA
+          --Jardinería y floristería
+          --Producción Agroecológica
+          --Producción Agropecuaria
+          --Trabajos Forestales y de Conservación del Medio Natural
+          -ARTES GRÁFICAS
+          --Impresión Gráfica
+          --Preimpresión Digital
+          -COMERCIO Y MARKETING
+          --Actividades Comerciales
+          -EDIFICACIÓN Y OBRA CIVIL
+          --Obras de Interior, Decoración y Rehabilitación
+          --Operación y Mantenimiento de Maquinaria de Construcción
+          -ELECTRICIDAD Y ELECTRÓNICA
+          --Equipos Electrónicos de Consumo
+          --Instalaciones de Telecomunicaciones
+          --Instalaciones eléctricas y automáticas
+          -FABRICACIÓN MECÁNICA
+          --Mecanizado
+          --Soldadura y Calderería
+          -HOSTELERÍA Y TURISMO
+          --Cocina y Gastronomía
+          --Pastelería y Panadería
+          --Servicios en restauración
+          -IMAGEN PERSONAL
+          --Estética y Belleza
+          --Peluquería y Cosmética Capilar
+          -IMAGEN Y SONIDO
+          --Laboratorio de Imagen
+          --Vídeo Disc-jockey y Sonido
+          -INDUSTRIAS ALIMENTARIAS
+          --Elaboración de Vinos y Otras Bebidas
+          --Panadería, Repostería y Confitería
+          -INFORMÁTICA Y COMUNICACIONES
+          --Sistemas microinformáticos y redes
+          -INSTALACIÓN Y MANTENIMIENTO
+          --Instalaciones Frigoríficas y de climatización.
+          --Instalaciones de Producción de Calor
+          --Mantenimiento electromecánico
+          --Montaje y Mantenimiento de Instalaciones de Frio, Climatización y Producción de Calor
+          -MADERA, MUEBLE Y CORCHO
+          --Carpintería y Mueble
+          --Fabricación a Medida e Instalación de Carpintería y Mueble
+          --Instalación y Amueblamiento
+          -MARÍTIMO-PESQUERA
+          --Buceo a Media Profundidad
+          --Cultivos Acuícolas
+          --Operación, Control y Mantenimiento de Máquinas e Instalaciones del Buque
+          --Pesca y Transporte Marítimo
+          -QUÍMICA
+          --Operaciones de Laboratorio
+          -SANIDAD
+          --Cuidados Auxiliares de Enfermería
+          --Emergencias Sanitarias
+          --Farmacia y parafarmacia
+          -SERVICIOS SOCIOCULTURALES Y A LA COMUNIDAD
+          --Atención a Personas en Situación de Dependencia
+          -TEXTIL, CONFECCIÓN Y PIEL
+          --Confección y moda
+          -TRANSPORTE Y MANTENIMIENTO DE VEHÍCULOS
+          --Carrocería
+          --Electromecánica de vehículos automóviles 
+### Estadística de la Enseñanza Universitaria
+ (Series anuales. Universidades de Canarias. 1998-2017 No todas las tablas tienen datos desde el 1998-2017)
+    
+         Alumnado matriculado, presentado, aprobado y relación aprobado presentado por universidades, sexos y convocatoria. 2013 a 2016/2011-2012
+
+              01 Total general.
+              02 Presentados en la misma convocatoria a las fases general y específica.
+              03 Presentados sólo a la fase general.
+              04 Presentados sólo a la fase específica.
+              
+              Alumnado español residente en Canarias en universidades presenciales españolas
+
+              09 Alumnado de Grado y de 1er y 2º ciclo según CC.AA. y cursos.
+              10 Alumnado de Máster según CC.AA. y cursos.
+              11 Alumnado egresado (que terminó estudios) de Grado y de 1er y 2º ciclo según CC.AA. y cursos.
+              12 Alumnado egresado (que terminó estudios) de Máster según CC.AA. y cursos. 
+              
+              
+              Alumnado de Grado y de 1er y 2º ciclo/Alumnado de nuevo ingreso de Grado/Alumnado de Máster/Alumnado egresado (que terminó estudios) de Grado y de 1er y 2º ciclo/Alumnado egresado (que terminó estudios) de Máster
+              40 Según universidades, sexos, ramas y años.
+              41 Según universidades, sexos, ámbitos de estudios y años. 2016.
+              42 Según universidades, ámbitos de estudios y años. 2012 a 2015.
+              43 Según universidades, sexos, tipos de centros y años.
+              44 Según universidades, sexos, edades y años.
+              45 Según universidades, sexos, nacionalidades y años. 
+              
+              Universidades públicas no presenciales (UNED)
+
+              46 Alumnado matriculado y egresado de Grado y de 1er y 2º ciclo por cursos.
+              47 Alumnado matriculado y egresado de Programas Oficiales de Posgrado (Máster) por cursos.
+              Doctorado
+              
+              48 Alumnado según universidades, sexos, ramas y cursos.
+              49 Alumnado según universidades, sexos, ámbitos de estudios y cursos.
+              50 Alumnado según universidades, sexos, edades y cursos.
+              51 Alumnado según universidades, sexos, nacionalidades y cursos.
+              52 Tesis doctorales aprobadas según universidades, sexos, edades y años.
+              53 Tesis doctorales aprobadas según universidades, sexos, ámbitos de estudios y años. 2015.
+              54 Tesis doctorales aprobadas según universidades, sexos, ámbitos de estudios y años. 2012 a 2014.
+              55 Tesis doctorales aprobadas según universidades, sexos, nacionalidades y años.
+              Centros y personal
+              
+              56 Centros según universidades, tipos de centros y cursos.
+              57 Personal docente e investigador de los centros propios según universidades públicas, sexos, categorías y cursos.
+              58 Personal docente e investigador de los centros adscritos según universidades públicas, sexos, categorías y cursos.
+              59 Personal docente e investigador según universidades privadas, sexos, categorías y cursos.
+              60 Personal docente e investigador de los centros propios según universidades públicas, sexos, ramas y cursos.
+              61 Personal de Administración y Servicios según universidades, sexos, tipos de centros, nombramientos y cursos. 
+    
+    
+### Estadística de Inserción Laboral (Universidad) 
+(Series anuales (por cursos) 2006-2017)
+
+       Egresos según titulaciones de ciclo/ Egresos según titulaciones de grado/ Egresos según titulaciones de máster/ Tasas de afiliación y paro de los egresos de la población residente
+       
+          01 Según sexos. Cursos de egreso
+          02 Según lugares de residencia por sexos. Cursos de egreso y periodos
+          03 Residente en Canarias según relación con la actividad económica por sexos. Cursos de egreso y periodos 
+          
+          
+### Estadística de la Formación Profesional para el Empleo 
+(Series anuales. Provincias de Canarias. 2008-2016)
+        	
+            Formación en la empresa
+                01 Participantes formados en empresas según sexos y provincias por periodos.
+                02 Empresas formadoras por provincias y periodos.
+            Formación dirigida prioritariamente a personas ocupadas
+                03 Participantes formados y duración media por participante según sexos y provincias por periodos.
+            Formación dirigida prioritariamente a personas desempleadas
+                04 Participantes que terminan acción formativa según sexos, grupos de edad y provincias por periodos.
+                05 Participantes que terminan acción formativa según nivel de estudios y provincias por periodos.
+                06 Acciones formativas realizadas por provincias y periodos.
+
+      
+
+##Cultura, deporte y ocio
+
+### Estadística de Museos y Colecciones Museográficas
+### Estadística de Bibliotecas
+### Recopilación de Estadísticas de Cultura
+### Recopilación de Estadísticas de Deportes
+### Estadística de Juegos de Azar
+
+## Elecciones y participación ciudadana
+
+### Sistema de Información Electoral en Canarias 
+(datos de elecciones desde 1979, cada 4 años)
+### Recopilación de Estadísticas de Representación Política Femenina 
+(Series anuales. Canarias. 1983-2015)
+
+## Justicia y Seguridad
+
+### Recopilación de Estadísticas Judiciales
+(Series trimestrales. Provincias de Canarias. 2003-2018)
+
+### Recopilación de Estadísticas sobre Violencia de Género
+(Series trimestrales. Islas y provincias de Canarias. 2005 - 2018)
+
+### Recopilación de Estadísticas sobre Seguridad y Delincuencia
+
+        - Series anuales para el ámbito de actuación de la Policía Local. 2005-2012
+        - Resultados anuales de la actividad desarrollada por las Fuerzas y Cuerpos de Seguridad. Provincias de Canarias . 2010-2017 (Metodología 2013)
+        - Resultados anuales para el ámbito de actuación del Cuerpo Nacional de Policía y la Guardia Civil. Provincias de Canarias. 2000-2015
+        
+### Estadística General de la Población Reclusa 
+
+(Series mensuales. Provincias de Canarias. 2006 Julio - 2018 Julio).
+
+        - 01 Según sexos y meses.
+        - 02 Según situación procesal-penal, centros penitenciarios y sexos por años. 
+        
+### Estadística Sobre Accidentes de Circulación
+(Series anuales 1999-2016 )
+
+## Protección social
+
+
+### Estadística del Plan Concertado de Prestaciones Básicas de Servicios Sociales
+(Series anuales. Municipios por islas. 2001-2016)
+
+### Estadística de Prestaciones por Desempleo 
+(Series mensuales. Provincias de Canarias. 1994-2018 Agosto)
+
+### Estadística de Pensiones Contributivas 
+(Series mensuales. Canarias. 1994-2018 Agosto )
+
+### Estadística de Pensiones No Contributivas 
+(Series mensuales. Canarias. 1994-2018 Agosto)
+
+### Estadística de Prestaciones de Maternidad y Paternidad 
+(Principales resultados. 2002-2017)
+
+### Sistema para la Autonomía y Atención a la Dependencia (SAAD)
+(Series mensuales. Canarias. 2008-2018 Enero)
+
+
+# Economía general
+
+
+##Cuentas económicas
+
+Sistema de cuentas económicas regionales: marco input/output, contabilidad regional y principales macromagnitudes por islas.
+
+### Contabilidad Trimestral de Canarias
+
+         - Contabilidad Trimestral de Canarias / Series trimestrales. Canarias y España. 2000-2018. (Base 2010)
+         - Contabilidad Trimestral de Canarias / Series trimestrales. Canarias y España. 2008-2014. (Base 2008)
+         
+### Contabilidad Regional de España
+
+         - Contabilidad Regional de España / Series anuales del PIB y sus componentes según el enfoque funcional. Comunidades autónomas. 2010-2017
+         
+### Contabilidad Regional de España: Estimaciones insulares armonizadas
+### Marco Input-Output de Canarias 
+(datos solo para 2002 y 2005)
+### Cuenta Satélite del Turismo de Canarias
+(datos solo para 2002)
+
+##Precios, consumo e inversión
+
+Evolución temporal y comparación territorial de precios, comportamiento de los consumidores, fondos destinados a la inversión.
+
+### Paridades del Poder Adquisitivo en Canarias
+        	
+          Cesta de la Compra. Resultados por islas (mensuales 2003-2018)
+          
+              01 Índices generales y de paridad.
+              02 Índices generales según grupos de productos.
+
+### Índice de Precios al Consumo
+
+         - Series mensuales. Provincias y comunidades autónomas. 2002 Enero - 2018 Septiembre. Base 2016/2011/2006
+         
+### Estadística de Precios Agrícolas
+        
+         - Series semanales. Islas. 2016 Enero – 2018 Julio
+         - Series quincenales. Islas. 2009 Marzo – 2015 Diciembre
+        
+### Estadística de Precios de Vivienda / Series trimestrales. Provincias por comunidades autónomas. 
+
+          - Series trimestrales 1995-2018 
+          
+        Esta publicación proporciona información de carácter trimestral para Canarias y el resto de comunidades autónomas, con sus respectivas provincias, sobre el precio de la vivienda. En función del acceso al mercado inmobiliario, distinguimos vivienda libre, para la que se dispone de información desde el primer trimestre de 1995; y vivienda protegida, desde el primer trimestre de 2005.
+        
+### Inversión Extranjera Directa en España
+          - Series trimestrales. Comunidades autónomas. 1993 Primer trimestre - 2018 Segundo trimestre
+          
+### Inversión Española Directa en el Exterior
+          - Series trimestrales. Comunidades autónomas. 1993 Primer trimestre - 2018 Segundo trimestre
+
+##  Empresas y centros de trabajo
+
+Distribución geográfica y características de las unidades de actividad económica (empresas y establecimientos).
+
+### Indicadores de Confianza Empresarial en Canarias 
+(Series trimestrales. Islas. 2013 Primer trimestre - 2018 Cuarto trimestre. (Base 2013))
+
+### Estadística de Sociedades Mercantiles 
+(Series mensuales. Provincias y comunidades autónomas. 1995 Enero – 2018 Agosto)
+          - 01 Sociedades mercantiles creadas según naturaleza jurídica por comunidades autónomas y provincias.
+          - 02 Sociedades mercantiles que amplían capital según naturaleza jurídica por comunidades autónomas y provincias. 
+          
+### Estadística de Empresas Inscritas en la Seguridad Social
+    
+    
+
+    Series trimestrales. 2012 Marzo – 2018 Junio (Metodología 2015)
+          Empresas Inscritas. Canarias/Islas de Canarias
+              01 Según actividades económicas (A86)/(A21).
+              02 Según estratos de asalariados.
+              03 Según naturaleza jurídica.
+              04 Según actividades económicas (A21), estratos de asalariados y naturaleza jurídica.
+              05 Según lugares de creación, actividades económicas (A10) y estratos de asalariados.
+              06 Según actividades turísticas, estratos de asalariados y naturaleza jurídica.
+         
+          Empresas Inscritas. Municipios por islas de Canarias
+              12 Según actividades económicas (A10).
+              13 Según estratos de asalariados.
+              14 Según naturaleza jurídica.
+
+    Series trimestrales. 2005 Marzo – 2015 Junio (Metodología 2005)
+                  	
+              Empresas Inscritas. Canarias/Islas de Canarias
+              01 Según naturaleza jurídica, estratos de asalariados y sectores económicos.
+              02 Según naturaleza jurídica, estratos de asalariados y divisiones de actividad.
+              03 Según actividades turísticas.
+            
+              Empresas Inscritas. Municipios por islas de Canarias
+              07 Según naturaleza jurídica.
+              08 Según estratos de asalariados.
+              09 Según sectores económicos.
+              10 Según divisiones de actividad.
+
+
+### Directorio Central de Empresas 
+        Series anuales. Comunidades autónomas. 2008-2018. (CNAE 2009) /Series anuales. Comunidades autónomas. 1999-2009. (CNAE 1993) 
+          	- 01 Empresas por CCAA, actividades principales, estratos de asalariados y años.
+            - 02 Locales por CCAA, actividades principales, estratos de asalariados y años. 
+
+
+# Empleo
+
+### Encuesta de Población Activa (EPA) (Series trimestrales. 1996 – 2018 Segundo trimestre)
+          	
+    Tablas resumen
+        01 Población de 16 y más años según sexos, grupos de edad y relaciones con la actividad económica.
+        02 Tasas de actividad, paro y empleo según sexos y grupos de edad.
+    Población activa
+        03 Según sexos y grupos de edad.
+        04 Tasas de actividad según sexos y grupos de edad.
+        05 Según sexos, grupos de edad y lugares de nacimiento.
+        06 Tasas de actividad según sexos, grupos de edad y lugares de nacimiento.
+        07 Según sexos, grupos de edad y nacionalidades.
+        08 Tasas de actividad según sexos, grupos de edad y nacionalidades.
+        09 Según sexos y estudios terminados (CNED-14) (desde 2014).
+        10 Tasas de actividad según sexos y estudios terminados (CNED-14) (desde 2014).
+        11 Según sexos y estudios terminados (hasta 2013).
+        12 Tasas de actividad según sexos y estudios terminados (hasta 2013).
+        13 Según sexos y estados civiles.
+        14 Tasas de actividad según sexos y estados civiles.
+        15 Según sexos, grupos de edad y sectores económicos (CNAE-09) (desde 2008).
+        16 Según sexos, grupos de edad y ocupaciones (CNO-11) (desde 2011).
+        17 Según sexos, grupos de edad y ocupaciones (CNO-94) (2008 a 2010).
+        18 Según sexos, grupos de edad y situaciones profesionales.
+    Población ocupada
+        19 Según sexos y grupos de edad.
+        20 Tasas de empleo según sexos y grupos de edad.
+        21 Según sexos, grupos de edad y lugares de nacimiento.
+        22 Tasas de empleo según sexos, grupos de edad y lugares de nacimiento.
+        23 Según sexos, grupos de edad y nacionalidades.
+        24 Tasas de empleo según sexos, grupos de edad y nacionalidades.
+        25 Según sexos y estudios terminados (CNED-14) (desde 2014)
+        26 Tasas de empleo según sexos y estudios terminados (CNED-14) (desde 2014).
+        27 Según sexos y estudios terminados (hasta 2013).
+        28 Tasas de empleo según sexos y estudios terminados (hasta 2013).
+        29 Según sexos y estados civiles.
+        30 Tasas de empleo según sexos y estados civiles.
+        31 Según sexos, grupos de edad y sectores económicos (CNAE-09) (desde 2008).
+        32 Según sexos, grupos de edad y ocupaciones (CNO-11) (desde 2011).
+        33 Según sexos, grupos de edad y ocupaciones (CNO-94) (2008 a 2010).
+        34 Según sexos, grupos de edad y situaciones profesionales.
+        35 Según sexos, grupos de edad y tipos de jornadas.
+        36 Según sexos, grupos de edad y horas efectivas de trabajo.
+        37 Según sexos, grupos de edad y tiempo en la ocupación actual.
+    Población asalariada
+        38 Según sexos y grupos de edad.
+        39 Según sexos, grupos de edad y lugares de nacimiento.
+        40 Según sexos, grupos de edad y nacionalidades.
+        41 Según sexos y estudios terminados (CNED-14) (desde 2014).
+        42 Según sexos y estudios terminados (hasta 2013).
+        43 Según sexos y estados civiles.
+        44 Según sexos, grupos de edad y sectores económicos (CNAE-09) (desde 2008).
+        45 Según sexos, grupos de edad y ocupaciones (CNO-11) (desde 2011).
+        46 Según sexos, grupos de edad y ocupaciones (CNO-94) (2008 a 2010).
+        47 Según sexos, grupos de edad y tipos de jornadas.
+        48 Según sexos, grupos de edad y horas efectivas de trabajo.
+        49 Según sexos, grupos de edad y tiempo en la ocupación actual.
+        50 Según sexos, grupos de edad y tipos de sector.
+        51 Según sexos, estudios terminados (CNED-14) y tipos de sector (desde 2014).
+        52 Según sexos, estudios terminados y tipos de sector (hasta 2013).
+        53 Según sexos, grupos de edad y tipos de contratos.
+        54 Según sexos, tipos de sector y tipos de contratos.
+    Población parada
+        55 Según sexos y grupos de edad.
+        56 Tasas de paro según sexos y grupos de edad.
+        57 Según sexos, grupos de edad y lugares de nacimiento.
+        58 Tasas de paro según sexos, grupos de edad y lugares de nacimiento.
+        59 Según sexos, grupos de edad y nacionalidades.
+        60 Tasas de paro según sexos, grupos de edad y nacionalidades.
+        61 Según sexos y estudios terminados (CNED-14) (desde 2014).
+        62 Tasas de paro según sexos y estudios terminados (CNED-14) (desde 2014).
+        63 Según sexos y estudios terminados (hasta 2013).
+        64 Tasas de paro según sexos y estudios terminados (hasta 2013).
+        65 Según sexos y estados civiles.
+        66 Tasas de paro según sexos y estados civiles.
+        67 Según sexos, grupos de edad y sectores económicos (CNAE-09) (desde 2008).
+        68 Según sexos y ocupaciones (CNO-11) (desde 2011).
+        69 Según sexos y ocupaciones (CNO-94) (2008 a 2010).
+        70 Según sexos y situaciones profesionales.
+        71 Según sexos y experiencia laboral.
+        72 Según sexos, grupos de edad y tiempo de búsqueda de empleo.
+        73 Que busca empleo como asalariada según sexos y tipos de jornada preferida (desde 2008).
+        74 Según sexos, grupos de edad y tiempo desde la última ocupación.
+    Población inactiva
+        75 Según sexos y grupos de edad.
+        76 Según sexos, grupos de edad y lugares de nacimiento.
+        77 Según sexos, grupos de edad y nacionalidades.
+        78 Según sexos y estudios terminados (CNED-14) (desde 2014).
+        79 Según sexos y estudios terminados (hasta 2013).
+        80 Según sexos y estados civiles.
+        81 Según sexos y tipos de inactividad.
+        82 Según sexos, grupos de edad y experiencia laboral.
+    Hogares
+        83 Según miembros del hogar de 16 y más años y activos.
+        84 Según miembros del hogar de 16 y más años y ocupados.
+        85 Según miembros del hogar de 16 y más años y asalariados.
+        86 Según miembros del hogar de 16 y más años y parados.
+        87 Según miembros del hogar de 16 y más años e inactivos.
+        88 Según activos y parados.
+        89 Según ocupados y asalariados.
+        90 Según todos los activos parados o no.
+        91 Según miembros del hogar de 16 y más años y perceptores de ingresos.
+
+### Estadística de Movimiento Laboral Registrado
+      
+
+     - Series mensuales de paro registrado. Provincias por Comunidades Autónomas. 2005 Mayo – 2018 Septiembre
+      - Series mensuales de paro registrado. Islas y municipios de Canarias. 2005 Mayo – 2018 Septiembre
+     - Series mensuales de demandas de empleo. Islas de Canarias. 2005 Mayo – 2018 Septiembre
+     - Series mensuales de contratos registrados. Islas de Canarias. 2005 Mayo – 2018 Septiembre
+
+
+    
+### Estadística de Empleo Registrado
+ 
+    
+
+    - Series trimestrales. Primer trimestre 1999 – Segundo trimestre 2018
+        	
+    Empleo registrado. Comarcas por islas de Canarias
+        01 Según situaciones profesionales. Desde 1999.
+        02 Según situaciones profesionales y ramas de actividad (CNAE-09). Desde 2009.
+        03 Según situaciones profesionales y ramas de actividad (CNAE-93). De 1999 a 2008.
+        04 Según ramas de actividad (CNAE-09). Canarias. De 1999 a 2008.
+    Empleo registrado. Municipios por islas de Canarias
+        05 Según situaciones profesionales. Desde 1999.
+        06 Según situaciones profesionales y ramas de actividad (CNAE-09). Desde 2009.
+        07 Según situaciones profesionales y ramas de actividad (CNAE-93). De 1999 a 2008.
+
+     - Series trimestrales en Entidades Locales. Cabildos y Ayuntamientos. 2005 Marzo – 2018 Junio
+
+
+### Estadística de Afiliación a la Seguridad Social
+ 
+      - Series mensuales. Provincias. 2005 Enero – 2018 Septiembre
+      - Series de afiliaciones según lugar de cotización. Islas y municipios de Canarias. 2010 Primer trimestre - 2018 segundo trimestre
+      - Series de afiliaciones según lugar de residencia. Islas y municipios de Canarias. 2010 Primer trimestre - 2018 segundo trimestre 
+### Estadística de la Formación Profesional para el Empleo
+      - Series anuales. Provincias de Canarias. 2008-2016 
+      
+### Estadística de Inserción Laboral(ya en educación)
+      (2011/2017 Según trimestre) 
+      
+### Estadística de Accidentes de Trabajo
+ 
+
+     - Datos de avance. Enero 2017 - Agosto 2018
+     - Accidentes de trabajo. Resultados anuales. 2003 - 2016
+     - Jornadas no trabajadas. Resultados anuales. 2003 - 2016
+     - Recaídas. Resultados anuales. 2003 - 2016
+     - Series históricas. Resultados anuales. 1988-2008
+
+
+### Encuesta Anual de Estructura Salarial ( Series anuales. España y Canarias. 2004-2016 )
+
+        01 Indicadores de la ganancia media anual por trabajador según sexos. España y Canarias por años.
+        02 ...según sectores económicos (CNAE-09) y sexos. España y Canarias por años.
+        03 ...según sectores económicos (CNAE-93) y sexos. España y Canarias por años.
+        04 ...según ocupaciones (CNO-11) y sexos. España y Canarias por años.
+        05 ...según ocupaciones (CNO-94) y sexos. España y Canarias por años.
+        06 ...según tipos de contratos y sexos. España y Canarias por años.
+        07 ...según grupos de edad y sexos. España y Canarias por años.
+        08 ...según nacionalidades y sexos. España y Canarias por años.
+        Ganancia por hora normal de trabajo
+        
+        09 ...según sectores económicos (CNAE-09) y sexos. España y Canarias por años.
+        10 ...según sectores económicos (CNAE-93) y sexos. España y Canarias por años.
+        11 ...según ocupaciones (CNO-11) y sexos. España y Canarias por años.
+        12 ...según ocupaciones (CNO-94) y sexos. España y Canarias por años.
+        13 ...según tipos de contratos y sexos. España y Canarias por años. 
+        
+### Encuesta Trimestral de Coste Laboral 
+
+        Series trimestrales. Comunidades Autónomas. 2000 – 2018 Segundo trimestre
+        Encuesta Trimestral de Coste Laboral. Base 2008. Series trimestrales. CNAE-09    
+        01 Coste laboral por trabajador según indicadores y componentes del coste en grandes grupos.
+        02 Coste laboral por trabajador según componentes del coste laboral total por trabajador .
+        03 Coste laboral por trabajador según componentes del coste laboral total por trabajador y sectores económicos.
+        04 Coste laboral por trabajador según componentes del coste laboral total por hora efectiva .
+        05 Coste laboral por trabajador según componentes del coste laboral total por hora efectiva y sectores económicos.
+        06 Desagregación del tiempo de trabajo por trabajador y mes, y tipos de jornadas.
+        07 Desagregación del tiempo de trabajo por trabajador y mes, tipos de jornadas y sectores económicos.
+        08 Coste por hora extraordinaria según clase de indicador.
+        09 Número de puestos de trabajo vacantes
+        10 Motivos por los que no existen puestos de trabajo vacantes
+    
+        Encuesta Trimestral de Coste Laboral. Base 2000. Series trimestrales hasta 2008. CNAE-93
+    
+        11 Coste laboral por trabajador según indicadores y componentes del coste en grandes grupos.
+        12 Coste laboral por trabajador según componentes del coste laboral total por trabajador y sectores económicos.
+        13 Coste laboral por trabajador según componentes del coste laboral total por hora efectiva y sectores económicos.
+        14 Desagregación del tiempo de trabajo por trabajador y mes, tipos de jornadas y sectores económicos.
+        15 Coste por hora extraordinaria según clase de indicador.
+
+
+
+
+# Sector primario
+
+
+##Agricultura, ganadería, pesca y caza
+
+### Estadística de Exportación de Productos Agrarios
+
+        Series mensuales. Islas. 2004 Enero – 2018 Agosto 
+           01 Plátanos según destinos de exportación por islas.
+           02 Productos hortofrutícolas según productos por provincias.
+           Series anuales. Provincias de Canarias. 1996-2013.
+          01 Flores, esquejes y plantas según destinos de exportación y productos por provincias.
+          
+          
+### Estadística de Precios Agrícolas (euros/Kg)
+      
+      Series semanales. Islas. 2016 Enero – 2018 Julio
+      01Percibidos por el agricultor según productos.
+      
+      Series quincenales. Islas. 2009 Marzo – 2015 Diciembre
+      01 Según tipos de establecimiento y productos.(según si se vende a supermercados, establecimientos especializados, etc.)
+      
+
+
+        
+### Estadística Agraria de Canarias (Series anuales de agricultura. Municipios, islas y provincias. 1999 – 2017)
+            	
+      Superficie cultivada según cultivos y sistemas de cultivo
+          01 Por islas. 2000-2006.
+          02 Cultivos herbáceos por municipios e islas. 2007-2017.
+          03 Cultivos leñosos por municipios e islas. 2007-2017.
+      Producción agrícola según cultivos
+          04 Producción agrícola por islas. 2000-2011.
+          05 Producción agrícola por islas. 2012-2017.
+          06 Producción agrícola y valor de la producción por provincias. 1999-2011.
+
+      
+      
+### Censo Agrario 
+(solo datos 2009 y 1999)
+
+### Estadística Agraria de Canarias 
+
+(Series anuales de ganadería. Municipios, islas y provincias. 1998-2016)
+     Censo de los animales
+     
+### Estadística de Caza 
+(Series anuales. Islas. 2005 - 2016)
+    Son las mismas tablas de licencias y pruebas que en medio ambiente
+
+
+# Sector secundario
+
+## Industria, energía y agua
+
+
+###  Índice de Producción Industrial
+###  Índice de Precios Industriales
+###  Encuesta Industrial de Empresas
+###  Encuesta Industrial Anual de Productos
+###  Estadística de producción y consumo de energía eléctrica
+###  Recopilación de estadísticas de productos derivados del petróleo
+
+##Construcción y vivienda
+
+Infraestructuras y construcción de viviendas. Participación pública y de empresas privadas.
+
+###  Estadística de Construcción de Edificios: Licencias municipales de obra
+  
+        - Series mensuales. Comunidades autónomas. 2000 Enero – 2018 Abril
+        - Series anuales. Municipios. 1994 – 2016
+        
+###  Estadística de Licitación Oficial en Construcción
+  
+        - Series mensuales. Comunidades autónomas. 1989 Enero – 2018 Abril
+        - Series anuales. Municipios. 1999 – 2017
+        
+        
+###  Estadística de Obras en Edificación: Visados de dirección de obras
+  
+        - Series mensuales. Comunidades autónomas. 2000 Enero – 2018 Abril
+        - Series anuales. Municipios. 2000 – 2017
+        
+###  Estadística de Venta Mayor de Cemento
+  
+        - Series mensuales. Islas. 2009 Marzo – 2018 Agosto
+        
+###  Estadística de Precios de Vivienda
+  
+        - Series trimestrales. Provincias. 1995 Primer trimestre – 2018 Segundo trimestre 
+      
+      
+###  Estadística de Vivienda Libre y Protegida 
+  
+      - Series mensuales. Canarias. 2002 Enero – 2018 Marzo
+
+# Sector servicios
+
+
+##Comercio
+
+Exportaciones e importaciones, circulación e intercambio de mercancías dentro y fuera de Canarias.
+
+###Índices de Comercio al por Menor (ICM)
+
+    - Series mensuales. Comunidades autónomas. 2001 Enero - 2018 Agosto. (Base 2015)/ (Base 2010)/(Base 2005)
+    	
+      Índices de venta a precios corrientes
+          01 Índices generales. España y comunidades autónomas.
+          02 Según grupos de venta. España y Canarias.
+      Índices de ventas a precios constantes
+          03 Índices generales. España y comunidades autónomas.
+          04 Según grupos de venta. España y Canarias.
+      Índices de ocupación
+          05 Índices generales. España y comunidades autónomas.
+
+###Encuesta Anual de Servicios
+
+
+    - Series anuales. Comunidades autónomas. 2008-2016. (CNAE-2009)
+        01 Principales variables económicas por agrupaciones de actividad 2008-2014
+        02 Principales variables económicas por agrupaciones de actividad 2015
+        03 Principales variables económicas por agrupaciones de actividad 2016 
+        
+   - Series anuales. Comunidades autónomas. 2000-2007. (CNAE-1993)
+        	
+       01 Principales variables económicas por agrupaciones de actividad
+
+
+
+###Indicadores de Actividad del Sector Servicios
+
+    - Series mensuales. Comunidades autónomas. Base 2015. 2005- 2018 Julio.
+    
+        01 Índice de cifra de negocios por comunidades autónomas y meses.
+        02 Índice de personal ocupado por comunidades autónomas y meses. 
+
+###Índices de Valor Unitario para el Comercio Exterior de Canarias (IVU) 
+
+(Series mensuales. Canarias. 2000 Enero - 2015 Febrero. Base 2000)
+
+Son indicadores sobre la evolución de los precios de las operaciones de exportación o importación de mercancías con origen o destino en la Comunidad Autónoma de Canarias. Se ofrecen resultados mensuales detallados por flujos de comercio (exportaciones e importaciones), destino económico de los bienes (bienes de consumo, de capital e intermedios) y por zonas económicas y geográficas (resto de España, resto de la Unión Europea y resto del Mundo).
+
+      01 Según destino económico de los bienes.
+      02 Según zonas económicas y geográficas. 
+
+
+###Estadística de Comercio Exterior de Canarias
+
+datos mensuales y anuales sobre la importación y exportación de productos de Canarias con el exterior.
+
+    - Series mensuales. Canarias. 2000 Enero - 2018 Julio (Metodología 2011)
+              Series resumen
+                01 Importaciones, exportaciones, déficit comercial y tasa de cobertura.
+            Series según clasificaciones de productos
+                02 Importaciones y exportaciones según capítulos arancelarios.
+                03 Importaciones y exportaciones según grupos de utilización.
+                04 Importaciones y exportaciones según Clasificación Uniforme para el Comercio Internacional (CUCI), Revisión 4.
+                05 Importaciones y exportaciones según CNAE 2009.
+                06 Importaciones y exportaciones de productos agrícolas.
+            Series según zonas económicas y geográficas
+                07 Importaciones y exportaciones según zonas económicas y geográficas.
+                08 Importaciones según principales países de origen.
+                09 Exportaciones según principales países de destino.
+        - Series anuales. Canarias. 2000 – 2017 (Metodología 2011)
+              01 Importaciones y exportaciones según capítulos y partidas arancelarias.
+              02 Importaciones y exportaciones según capítulos arancelarios por zonas económicas y geográficas.
+              03 Importaciones según capítulos arancelarios por principales países de origen.
+              04 Exportaciones según capítulos arancelarios por principales países de destino. 
+        - Series mensuales. Canarias. 1988 Enero - 2009 Diciembre (Metodología 1993)
+            01 Importaciones, exportaciones, déficit comercial y tasa de cobertura.
+            02 Importaciones y exportaciones según capítulos arancelarios.
+            03 Importaciones y exportaciones según zonas económicas y geográficas.
+            04 Importaciones según principales países de origen.
+            05 Exportaciones según principales países de destino. 
+        - Series anuales. Canarias. 1988 – 2009 (Metodología 1993)
+              01 Importaciones y exportaciones según capítulos y partidas arancelarias.
+              02 Importaciones y exportaciones según capítulos arancelarios y zonas económicas y geográficas.
+              03 Importaciones según capítulos arancelarios y principales países de origen.
+              04 Exportaciones según capítulos arancelarios y principales países de destino. 
+                  
+      	
+  
+
+
+##Hostelería y turismo
+
+Actividades relacionadas con el conjunto de servicios que proporcionan alojamiento y/o comida a los viajeros, así como las actividades de las personas que viajan y permanecen en lugares diferentes a su entorno habitual.
+
+###Recopilación de Estadísticas de Transporte Marítimo 
+
+(tráfico de pasajeros)(Series mensuales. Puertos de Canarias. 1998-2018)
+
+        Tráfico marítimo de Puertos del Estado
+            01 Tráfico de pasaje por puertos y periodos.
+            02 Tráfico de buques mercantes por puertos y periodos.
+            03 Tráfico de mercancías por puertos y periodos.
+        
+        Tráfico marítimo de Puertos Canarios
+        
+            04 Tráfico de pasajeros por puertos y periodos.
+            05 Tráfico de vehículos por puertos y periodos.
+
+
+###Recopilación de Estadísticas de Transporte Aéreo
+
+
+     - Series mensuales de entrada de pasajeros. Aeropuertos. 1993 Enero - 2018 Septiembre
+                 	
+            Entrada de pasajeros no interinsulares por islas de destino
+                01 Según clases de tráfico por origen.
+            Entrada de pasajeros por aeropuertos de destino
+                02 Interinsulares según clases de tráfico por aeropuertos de origen.
+                03 Desde el resto de España según clases de tráfico por aeropuertos de origen.
+                04 Desde el extranjero según clases de tráfico por países de origen.
+
+     - Series mensuales de tráfico de pasajeros, aviones y mercancías. Aeropuertos de Canarias. 1999 Enero - 2018 Junio
+     
+         	
+            Evolución del tráfico aéreo comercial
+                01 Tráfico de pasajeros, aviones y mercancías por aeropuertos por islas y periodos.
+            Tráfico aéreo comercial según clases de tráfico y servicios
+                02 Tráfico de pasajeros por aeropuertos por islas y periodos.
+                03 Tráfico de aviones por aeropuertos por islas y periodos.
+                04 Tráfico de mercancías por aeropuertos por islas y periodos.
+
+    - Series anuales de subvenciones al transporte aéreo. Canarias. 2005 - 2012
+            01 Según lugares de residencia y tipos de trayecto por periodo.
+
+
+###Estadística de Movimientos Turísticos en Fronteras de Canarias
+
+
+
+    - FRONTUR-Canarias / Series mensuales de entradas de turistas y excursionistas. Islas de Canarias. 2012-2018 (Metodología 2016)
+    
+        	
+            Series armonizadas nacionalmente desde octubre de 2015
+                01 Turistas internacionales según lugares de residencia.
+            Series históricas enlazadas desde enero de 2012
+                Pasajeros aéreos en Canarias según meses por años
+                    02 Peso de pasajeros aéreos entrados a Canarias en vuelos internacionales según lugar de residencia por periodos.
+                    03 Peso de pasajeros aéreos entrados a Canarias en vuelos nacionales según lugar de residencia por periodos.
+                Turistas nacionales e internacionales entrados a Canarias según meses por años
+                    04 Turistas según lugares de residencia.
+                    05 Turistas según lugares de residencia por sexo y grupos de edades.
+                    06 Turistas según países de residencia por número de pernoctaciones.
+                    07 Turistas según países de residencia por tipos de alojamiento.
+                    08 Turistas según países de residencia por motivos de estancia.
+                    09 Turistas según países de residencia por contratación de paquete turístico.
+                Turistas nacionales e internacionales entrados por islas según meses por años
+                    10 Turistas según lugares de residencia.
+                    11 Turistas según países de residencia por número de pernoctaciones.
+                    12 Turistas según países de residencia por tipos de alojamiento.
+                    13 Turistas según países de residencia por motivos de estancia.
+                    14 Turistas según países de residencia por contratación de paquete turístico.
+
+    - FRONTUR-Canarias / Series mensuales de entradas de turistas y excursionistas. Islas de Canarias. 2009-2015 (Metodología 2009)
+
+
+###Encuesta sobre Gasto Turístico (un montón de tablas por cada serie)
+
+    - Series según metodología 2016
+    
+    
+
+                - EGT / Series trimestrales de gasto turístico. Islas de Canarias. 2010-2017 (Metodología 2016)
+                - EGT / Series trimestrales del perfil del turista. Islas de Canarias. 2010-2016 (Metodología 2016)
+                - EGT / Series trimestrales de las características de los viajes y satisfacción de los turistas. Islas de Canarias. 2010-2016 (Metodología 2016)
+                - EGT / Series anuales de los municipios turísticos. Islas de Canarias. 2010-2016 (Metodología 2016)
+                - EGT / Series anuales de micromercados turísticos de Alemania y Reino Unido. Islas de Canarias. 2010-2016 (Metodología 2016)
+
+
+    
+    - Series según metodología 2009
+    
+            
+
+            - EGT / Series trimestrales de gasto turístico. Islas de Canarias. 2009-2015 (Metodología 2009)
+            - EGT / Series trimestrales del perfil del turista. Islas de Canarias. 2009-2015 (Metodología 2009)
+            - EGT / Series trimestrales de las características de los viajes y satisfacción de los turistas. Islas de Canarias. 2009-2015 (Metodología 2009)
+            - EGT / Series anuales de los municipios turísticos. Islas de Canarias. 2009-2015 (Metodología 2009)
+            - EGT / Series anuales de micromercados turísticos de Alemania y Reino Unido. Islas de Canarias. 2011-2015 (Metodología 2009)
+
+
+          
+###Encuesta de satisfacción y gasto de los usuarios de campos de golf 
+(Resultados detallados. 2008-2010)
+
+###Estadística del Turismo Español (descatalogada) 
+(Series mensuales 2005-1009) (ya no se usa)
+
+         Perfiles de los pasajeros procedentes de aeropuertos nacionales
+      
+           - Según lugares de residencia por grupos de edad.
+           
+           - Según su lugar de residencia por sexo.
+           
+           - Según comunidad autónoma de residencia.
+            
+          -  Según tamaño del grupo de viajeros.
+            
+           - Según relaciones con la actividad económica.
+        
+        
+        Motivo del viaje de los pasajeros procedentes de aeropertos nacionales
+        
+           
+           - Según el motivo del viaje.
+           
+           - Según motivo del viaje por Comunidad Autónoma de residencia. 
+           
+           
+###Encuestas de Alojamiento Turístico (ocupación rentabilidad, precios, ingresos, empleo de los hoteles)
+
+     Hoteles + apartamentos
+    
+       - Series mensuales. Municipios por islas. 2009-2018
+       - Series anuales. Microdestinos turísticos. 2009-2017
+    
+    Hoteles
+    
+       - Series mensuales. Municipios por islas. 2009-2018 (Metodología 2010)
+       - Series mensuales. Canarias por islas. 1996-2010 (Metodología 1991)
+    
+    Apartamentos
+    
+       - Series mensuales. Municipios por islas. 2009-2018 (Metodología 2012)
+       - Series mensuales. Canarias por islas. 2007-2012 (Metodología 2007)
+
+
+###Encuesta de Expectativas Hoteleras
+      
+
+       - Series trimestrales. Islas de Canarias. 2004-2018 (Metodología 2012)
+       - Series trimestrales. Islas de Canarias. 2004-2012 (Metodología 1993)
+
+
+      
+###Encuesta Anual de Servicios
+
+      
+
+    -Series anuales. Comunidades autónomas. 2008-2016. (CNAE-2009)
+    -Series anuales. Comunidades autónomas. 2000-2007. (CNAE-1993)
+
+
+###Indicadores de Actividad del Sector Servicios
+
+    Series mensuales. Comunidades autónomas. Base 2015. 2005- 2018 Julio
+    
+        	01 Índice de cifra de negocios por comunidades autónomas y meses.
+          02 Índice de personal ocupado por comunidades autónomas y meses. 
+
+##Transporte y comunicaciones
+
+Modalidades, infraestructuras, conexiones internas y externas de Canarias, volumen de actividad.
+
+###Estadística de Transporte de Viajeros
+    -Series mensuales de transporte urbano regular en guagua. Comunidades autónomas. 1996 Enero - 2018 Agosto
+###Estadística de Matriculación de Vehículos
+
+    - Series mensuales de matriculación. Municipios. 2003 Enero - 2018 Agosto
+###Encuesta Anual de Servicios
+
+La Encuesta Anual de Servicios (EAS) proporciona información anual de las principales características estructurales de las actividades que configuran el sector servicios en Canarias, permitiendo su comparación con los datos nacionales y de otras Comunidades Autónomas.
+
+     - Series anuales. Comunidades autónomas. 2008-2016. (CNAE-2009)
+            01 Principales variables económicas por agrupaciones de actividad 2008-2014 (indicadores: nº de locales, Vol. de negocio, Sualdo y salarios, Inversión en activos materiales, Personal ocupado)
+            02 Principales variables económicas por agrupaciones de actividad 2015
+            03 Principales variables económicas por agrupaciones de actividad 2016 
+     - Series anuales. Comunidades autónomas. 2000-2007. (CNAE-1993)
+            01 Principales variables económicas por agrupaciones de actividad (sí es una serie temporal)
+            
+
+###Estadística de Parque de Vehículos
+número de vehículos en circulación, su composición y sus características técnicas para todos los municipios de Canarias
+
+  - Series mensuales. Municipios. 2005 Diciembre - 2017 Diciembre
+  
+###Indicadores de Actividad del Sector Servicios
+(IASS) proporcionan información mensual sobre la evloución de la cifra de negocios (ventas) y la ocupación en el sector servicios de la economía canaria, permitiendo su comparación con los datos nacionales y de otras Comunidades Autónomas.  
+
+    - Series mensuales. Comunidades autónomas. Base 2015. 2005- 2018 Julio
+    
+###Recopilación de Estadísticas de Transporte Marítimo
+Información mensual sobre los buques mercantes entrados en cada uno de los Puertos del Estado en Canarias, aportando datos sobre el tráfico de pasajeros (distinguiendo entre pasajeros en línea regular o pasajeros de crucero), los buques y las mercancías cargadas, descargadas o transbordadas. E información mensual del tráfico de pasaje en los Puertos Canarios.
+
+    - Series mensuales de transporte marítimo. Puertos. 1998 Enero - 2018 Agosto
+    
+
+###Recopilación de Estadísticas de Transporte Aéreo(ya en hostelería y turismo)
+
+
+##Servicios financieros, monetarios y seguros
+
+Redes bancarias, crediticias y financieras. Movimientos de capital. Fondos de garantía privados.
+
+###Estadística de Entidades de Crédito
+
+
+
+    - Créditos y depósitos / Series trimestrales. 1988 – 2017 Cuarto trimestre
+            01 Créditos a Administraciones Públicas y otros sectores residentes por comunidades autónomas y provincias.
+            02 Depósitos de Administraciones Públicas y otros sectores residentes por comunidades autónomas y provincias. 
+    - Número de oficinas / Series anuales. 1991 – 2013
+    	      01 Número de oficinas de entidades de crédito por municipios de Canarias y años.
+
+
+###Estadística de Efectos de Comercio Impagados
+Número y el importe de los efectos comerciales de las entidades de crédito en cartera que hayan vencido durante el mes de referencia y que hayan resultado impagados.
+
+      Series mensuales. Provincias por comunidades autónomas. 2002 Enero – 2015 Diciembre
+      
+      	01 Según entidades financieras, provincias por comunidades autónomas y meses. 
+      	
+###Estadística de Hipotecas
+
+
+
+      - Series mensuales. Grandes comarcas por islas de Canarias. 2006 Enero – 2018 Julio
+      - Series mensuales. Provincias por comunidades autónomas. 2003 Enero – 2018 Julio
+
+
+
+###Estadística de Tipos de Interés
+Carácter mensual sobre los diferentes tipos de interés oficiales de referencia del mercado hipotecario y los de la política monetaria del Eurosistema del Banco Central Europeo.
+
+      - Series mensuales. 1999 Enero - 2018 Septiembre
+
+
+
+###Estadística de Tipos de Cambio 
+información de carácter mensual sobre los diferentes tipos de cambio oficiales del euro del Banco Central Europeo
+
+    - Series mensuales. 1999-2018 
+
+# Administración pública
+
+### Estadística Presupuestaria de la Comunidad Autónoma de Canarias
+
+    - Series mensuales. 1992-2014
+    	
+          Ejecución presupuestaria de la Administración General de la Comunidad Autónoma de Canarias
+          01 Ejecución del presupuesto de ingresos según meses por años.
+          02 Ejecución del presupuesto de gastos según meses por años.
+          Liquidación del Presupuesto de la Administración General de la Comunidad Autónoma de Canarias
+          03 Liquidación del Presupuesto consolidado según años.
+
+###Estadística Presupuestaria de las Entidades Locales de Canarias
+
+presupuestos y la liquidación presupuestaria de los Cabildos Insulares y Ayuntamientos de Canarias, según la clasificación económica de ingresos y gastos, la clasificación funcional o la clasificación por programas del gasto.
+  - Series anuales. Islas y municipios de Canarias. 2001-2016
+  
+###Estadística de Recaudación Tributaria de la Comunidad Autónoma de Canarias
+
+  - Series mensuales. Provincias de Canarias. 1999 Enero – 2018 Julio
+  
+   recaudación de los principales impuestos que gestiona la Administración General de la Comunidad Autónoma.
+   
+   
+###Estadística de Recaudación Tributaria del Estado en Canarias
+  - Series mensuales. Provincias de Canarias. 1991 Enero – 2018 Junio
+Información mensual sobre la recaudación de los principales impuestos gestionados por la Administración General del Estado en Canarias.
+
+
+###Estadística de los Declarantes del IRPF (Series anuales. 2010-2014)
+  -Series anuales. 2010-2014
+  
+###Estadística del Impuesto sobre los Bienes Inmuebles (IBI)
+  - Series anuales. 1990 – 2016
+      01 IBI por provincias de España.
+      02 IBI por municipios e islas de Canarias.
+      03 Tipos impositivos del IBI por municipios de Canarias. 
+      
+###Estadística de Empleo Registrado (ya en empleo)
+
+
+# Ciencia y tecnología
+
+### Estadística sobre Actividades en I+D
+
+    - Series anuales. Canarias. 2007 – 2016
+    
+              	
+          Resultados generales de I+D
+          01 Personal en EJC según sectores de ejecución en España y Canarias.
+          02 Investigadores en EJC por sectores de ejecución en España y Canarias.
+          03 Gastos internos según sectores de ejecución en España y Canarias.
+          04 Número de unidades que realizan I+D en Canarias según sectores de ejecución.
+          Unidades con sede social en Canarias: Sector administración pública
+          05 Personal en EJC según sexos y ocupaciones.
+          06 Personal en EJC según titulaciones.
+          07 Personal según sexos y ocupaciones.
+          08 Personal según sexos y titulaciones.
+          09 Personal según sexos y disciplinas científicas.
+          10 Investigadores según sexos y grupos de edad.
+          11 Investigadores según sexos y nacionalidades.
+          12 Gastos internos según la naturaleza del gasto.
+          13 Gastos internos según objetivos socioeconómicos.
+          14 Gastos internos corrientes según tipos de investigación por años.
+          15 Financiación de los gastos internos según origen de los fondos.
+          16 Compra de servicios de I+D externa según lugar de la compra.
+          Unidades con sede social en Canarias: Sector enseñanza superior
+          17 Personal en EJC según sexos y ocupaciones.
+          18 Personal en EJC según titulaciones.
+          19 Personal según sexos y ocupaciones.
+          20 Personal según sexos y titulaciones.
+          21 Personal según sexos y disciplinas científicas.
+          22 Investigadores según sexos y grupos de edad.
+          23 Investigadores según sexos y nacionalidades.
+          24 Gastos internos según la naturaleza del gasto.
+          25 Gastos internos según objetivos socioeconómicos.
+          26 Gastos internos corrientes según tipos de investigación por años.
+          27 Financiación de los gastos internos según origen de los fondos.
+          28 Compra de servicios de I+D externa según lugar de la compra.
+          Unidades con sede social en Canarias: Sector empresas
+          29 Personal en EJC según sexos, ocupaciones y tamaños de la empresa.
+          30 Personal en EJC según sexos, ocupaciones y principales sectores económicos (CNAE-2009).
+          31 Personal en EJC según sexos y sectores económicos (CNAE-2009).
+          32 Personal en EJC según sexos y titulaciones.
+          33 Personal en EJC según titulaciones y tamaños de la empresa.
+          34 Personal en EJC según titulaciones y principales sectores económicos (CNAE-2009).
+          35 Personal en EJC según ramas de actividad económica (CNAE-2009).
+          36 Personal según sexos, ocupaciones y tamaños de la empresa.
+          37 Personal según sexos, ocupaciones y principales sectores económicos (CNAE-2009).
+          38 Gastos internos según objetivos socioeconómicos y tamaños de la empresa.
+          39 Gastos internos según objetivos socioeconómicos y sectores económicos (CNAE-2009).
+          40 Gastos internos según la naturaleza del gasto y tamaños de la empresa.
+          41 Gastos internos según la naturaleza del gasto y sectores económicos (CNAE-2009).
+          42 Gastos internos según ramas de actividad económica (CNAE-2009).
+          43 Gastos internos corrientes según tipos de investigación y tamaños de la empresa.
+          44 Gastos internos corrientes según tipos de investigación y sectores económicos (CNAE-2009).
+          45 Financiación de los gastos internos según origen de los fondos.
+          46 Financiación de los gastos internos según origen de los fondos y tamaños de la empresa.
+          47 Compra de servicios de I+D externa según lugar de la compra.
+          48 Empresas que realizan I+D según tamaños de la empresa.
+          49 Empresas que realizan I+D según ramas de actividad económica (CNAE-2009).
+          50 Principales indicadores de I+D en alta tecnología.
+          Unidades con sede social en Canarias: Sector instituciones privadas sin fines de lucro
+          51 Personal en EJC.
+          52 Gastos internos.
+
+    - Series anuales. Comunidades autónomas. 2007 – 2016
+          01 Personal en EJC según sexos y sectores de ejecución.
+          02 Gastos internos según sectores de ejecución.
+          03 Porcentaje de gastos internos respecto al PIB a precios de mercado (base 2010). Serie 2010-2016.
+          04 Porcentaje de gastos internos respecto al PIB a precios de mercado (base 2008). Serie 2008-2013.
+          05 Principales indicadores de I+D en alta tecnología. 
+
+
+
+###Encuesta sobre Innovación en las Empresas
+  
+
+   -  Series anuales. Canarias. 2007 – 2016
+   
+            Actividades para la innovación tecnológica: Resultados generales
+                01 Gastos totales en actividades innovadoras según ramas de actividad económica (CNAE-2009). España y Canarias.
+            Actividades para la innovación tecnológica de las empresas con sede social en Canarias
+                02 Empresas con actividad innovadora e intensidad de innovación según ramas de actividad económica (CNAE-2009).
+                03 Empresas según tipos de actividad innovadora y sectores económicos (CNAE-2009).
+                04 Empresas según tipos de actividad innovadora y tamaños de la empresa.
+                05 Empresas con actividad de I+D interna y tamaños de la empresa.
+                06 Gastos totales en actividades innovadoras y gastos internos en I+D según sectores económicos (CNAE-2009).
+                07 Gastos totales en actividades innovadoras y gastos internos en I+D según tamaños de la empresa.
+                08 Intensidad de innovación según grupos de empresas y tamaños de la empresa.
+            Innovación tecnológica de las empresas con sede social en Canarias
+                09 Empresas innovadoras según tipos de innovación tecnológica y ramas de actividad económica (CNAE-2009).
+                10 Empresas innovadoras según tipos de innovación tecnológica y tamaños de la empresa.
+                11 Empresas innovadoras según quien ha desarrollado la innovación y tamaños de la empresa (años 2007 a 2011).
+                12 Empresas innovadoras según quien ha desarrollado la innovación y tamaños de la empresa (desde 2012).
+                13 Empresas innovadoras según titularidad y tamaños de la empresa.
+                14 Impacto económico de las innovaciones según grupos de empresas y tamaños de la empresa.
+                15 Empresas con innovaciones en curso o no exitosas según tamaños de la empresa.
+                16 Empresas EIN según financiación, cooperación o derechos de propiedad intelectual e industrial.
+                17 Empresas EIN según financiación, cooperación o derechos de propiedad intelectual e industrial por tamaños de la empresa.
+                18 Porcentaje de empresas EIN según objetivos de la innovación y principales sectores económicos (CNAE-2009).
+                19 Porcentaje de empresas EIN según objetivos de la innovación y tamaños de la empresa.
+                20 Porcentaje de empresas innovadoras según fuentes de información y tamaños de la empresa.
+                21 Porcentaje de empresas según factores que dificultan la innovación y sectores económicos (CNAE-2009).
+                22 Porcentaje de empresas según factores que dificultan la innovación y tamaños de la empresa.
+            Innovación no tecnológica de las empresas con sede social en Canarias
+                23 Empresas innovadoras según tipos de innovación no tecnológica y sectores económicos (CNAE-2009).
+                24 Empresas innovadoras según tipos de innovación no tecnológica y tamaños de la empresa.
+                25 Empresas innovadoras según quien ha desarrollado la innovación y tamaños de la empresa (años 2007 a 2013).
+                26 Porcentaje de empresas innovadoras según objetivos de la innovación y principales sectores económicos (CNAE-2009) (años 2008 a 2013).
+                27 Porcentaje de empresas innovadoras según objetivos de la innovación y tamaños de la empresa (años 2008 a 2013).
+
+   
+   -  Series anuales. Comunidades autónomas. 2007 – 2016
+                            	
+              Actividades para la innovación tecnológica: Resultados generales
+                  01 Según comunidades autónomas en las que se ubica la sede social de la empresa.
+                  02 Según comunidades autónomas en las que se realiza la actividad innovadora.
+              Innovación tecnológica y no tecnológica
+                  03 Empresas innovadoras según tipos de innovación.
+                  04 Empresas innovadoras según tipos de innovación tecnológica.
+                  05 Porcentaje de empresas EIN según objetivos de la innovación.
+                  06 Empresas innovadoras según tipos de innovación no tecnológica.
+                  07 Porcentaje de empresas con innovación no tecnológica según objetivos de la innovación.
+
+
+
+###Estadística de Comercio Exterior según el Contenido Tecnológico
+     -Series trimestrales. Canarias. 2008 Primer trimestre – 2018 Segundo trimestre
+     
+          01 Importaciones según contenido tecnológico y territorios de origen.
+          02 Exportaciones según contenido tecnológico y territorios de destino. 
+
+
+###Encuesta de Tecnologías de la Información y la Comunicación en las Empresas de Canarias
+
+Aanalizar la implantación y el uso de las tecnologías de la información y de la comunicación y del comercio electrónico en el sector empresarial en Canarias. Esta publicación ofrece los resultados relativos al año 2006. 
+
+
+    - Resultados detallados. Islas de Canarias. 2009/2010
+        	
+          Uso de tecnologías de la información y de la comunicación (TIC): Porcentaje de empresas
+              01 Según tipos de equipamiento TIC y tamaños de la empresa por islas.
+              02 Según tipos de equipamiento TIC, tamaños de la empresa y agrupaciones de actividad (CNAE-2009).
+              03 Según aplicaciones o sistemas informáticos instalados y tamaños de la empresa por islas.
+              04 Según aplicaciones o sistemas informáticos instalados, tamaños de la empresa y agrupaciones de actividad (CNAE-2009).
+          Acceso y uso de Internet: Porcentaje de empresas con conexión a Internet
+              05 Según tipos de conexión y tamaños de la empresa por islas.
+              06 Según tipos de conexión, tamaños de la empresa y agrupaciones de actividad (CNAE-2009).
+              07 Según uso de Internet y tamaños de la empresa por islas.
+              08 Según uso de Internet, tamaños de la empresa y agrupaciones de actividad (CNAE-2009).
+              09 Según interacción con la Administración Pública y tamaños de la empresa por islas.
+              10 Según interacción con la Administración Pública, tamaños de la empresa y agrupaciones de actividad (CNAE-2009).
+              11 Con página web según servicios disponibles y tamaños de la empresa por islas.
+              12 Con página web según servicios disponibles, tamaños de la empresa y agrupaciones de actividad (CNAE-2009).
+              13 Que han usado firma digital según usos de la firma digital y tamaños de la empresa por islas.
+              14 Que han usado firma digital según usos de la firma digital, tamaños de la empresa y agrupaciones de actividad (CNAE-2009).
+          Comercio electrónico: Porcentaje de empresas
+              15 Según tipos de comercio electrónico y tamaños de la empresa por islas.
+              16 Según tipos de comercio electrónico, tamaños de la empresa y agrupaciones de actividad (CNAE-2009).
+
+    
+    - Resultados detallados. Islas de Canarias. 2006/2007
+              	
+    Uso de tecnologías de la información y de la comunicación (TIC)
+        Equipamiento TIC
+            01 Porcentaje de empresas según tipos de equipamiento en Canarias.
+            02 Número medio por empresa de equipamientos TIC en Canarias.
+            03 Porcentaje de empresas con personal que asistió a alguna videoconferencia por motivos de trabajo en Canarias.
+            04 Porcentaje de empresas que considera nulo el grado en que Internet ha sustituido otros sistemas de comunicación en Canarias.
+            05 Porcentaje de empresas según tipos de equipamiento y agrupaciones de actividad (CNAE-93) en Canarias.
+            06 Número medio por empresa de equipamientos TIC según agrupaciones de actividad (CNAE-93) en Canarias
+            07 Porcentaje de empresas según tipos de equipamiento y tamaños de la empresa en Canarias.
+            08 Número medio por empresa de equipamientos TIC según tamaños de la empresa en Canarias.
+            09 Porcentaje de empresas según tipos de equipamiento, agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            10 Número medio por empresa de equipamientos TIC según agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            11 Porcentaje de empresas según tipos de equipamiento por islas de Canarias.
+            12 Número medio por empresa de equipamientos TIC por islas de Canarias.
+        Porcentaje de empresas que recibió algún boletín o revista electrónica
+            13 En Canarias.
+            14 Según agrupaciones de actividad (CNAE-93) en Canarias.
+            15 Según tamaños de la empresa en Canarias.
+            16 Según agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            17 Por islas de Canarias.
+        Porcentaje de empresas que ha contratado los servicios de alguna empresa dedicada al desarrollo de las TIC
+            18 En Canarias.
+            19 Según agrupaciones de actividad (CNAE-93) en Canarias.
+            20 Según tamaños de la empresa en Canarias.
+            21 Según agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            22 Por islas de Canarias.
+        Porcentaje de empresas que ha incorporado TIC
+            23 En Canarias.
+            24 Según origen de los fondos en Canarias.
+            25 Según agrupaciones de actividad (CNAE-93) en Canarias.
+            26 Según origen de los fondos y agrupaciones de actividad (CNAE-93) en Canarias.
+            27 Según tamaños de la empresa en Canarias.
+            28 Según origen de los fondos y tamaños de la empresa en Canarias.
+            29 Según agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            30 Según origen de los fondos, agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            31 Por islas de Canarias.
+            32 Según origen de los fondos por islas de Canarias.
+        Personal de la empresa: Ocupación y formación en TIC
+            33 Porcentaje del personal en Canarias.
+            34 Teletrabajo: Porcentaje de empresas y de personal en Canarias.
+            35 Porcentaje de empresas con profesionales de las TIC en Canarias.
+            36 Porcentaje del personal según agrupaciones de actividad (CNAE-93) en Canarias.
+            37 Teletrabajo: Porcentaje de empresas y de personal según agrupaciones de actividad (CNAE-93) en Canarias.
+            38 Porcentaje del personal según tamaños de la empresa en Canarias.
+            39 Teletrabajo: Porcentaje de empresas y de personal según tamaños de la empresa en Canarias.
+            40 Porcentaje del personal según agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            41 Teletrabajo: Porcentaje de empresas y de personal según agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            42 Porcentaje del personal por islas de Canarias.
+            43 Teletrabajo: Porcentaje de empresas y de personal por islas de Canarias.
+        Marco legal: Porcentaje de empresas según conocimiento y aplicación
+            44 En Canarias.
+            45 Según agrupaciones de actividad (CNAE-93) en Canarias.
+            46 Según tamaños de la empresa en Canarias.
+            47 Según agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            48 Por islas de Canarias.
+    Acceso y uso de Internet
+        Porcentaje de empresas que ha emprendido alguna campaña publicitaria en Internet
+            49 En Canarias.
+            50 Según agrupaciones de actividad (CNAE-93) en Canarias.
+            51 Según tamaños de la empresa en Canarias.
+            52 Según agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            53 Por islas de Canarias.
+        Porcentaje de empresas que disponía de conexión a Internet
+            54 En Canarias.
+            55 Según agrupaciones de actividad (CNAE-93) en Canarias.
+            56 Según tamaños de la empresa en Canarias.
+            57 Según agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            58 Por islas de Canarias.
+        Porcentaje de empresas que disponía de sitio web o página web
+            59 En Canarias.
+            60 Según agrupaciones de actividad (CNAE-93) en Canarias.
+            61 Según tamaños de la empresa en Canarias.
+            62 Según agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            63 Por islas de Canarias.
+    Comercio electrónico
+        Porcentaje de empresas que ha realizado compras o ventas a través de comercio electrónico
+            64 Compras en Canarias.
+            65 Ventas en Canarias.
+            66 Según agrupaciones de actividad (CNAE-93) en Canarias.
+            67 Según tamaños de la empresa en Canarias.
+            68 Según agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            69 Por islas de Canarias.
+        Distribución de las ventas de las empresas a través de Internet
+            70 En Canarias.
+        Porcentaje de empresas según factores que obstaculizan el uso del comercio electrónico por Internet
+            71 En Canarias.
+            72 Según agrupaciones de actividad (CNAE-93) en Canarias.
+            73 Según tamaños de la empresa en Canarias.
+            74 Según agrupaciones de actividad (CNAE-93) y tamaños de la empresa en Canarias.
+            75 Por islas de Canarias.
+
+
+###Encuesta sobre la implantación de las tecnologías de la información y la comunicación en los hogares de Canarias (TIC-HC) 
+
+ (2010 y 2016 no es una serie temporal)
+ 
+Esta encuesta permite conocer la implantación de las tecnologías de información y comunicación en los hogares canarios, su equipamiento en dichas tecnologías y el uso que las personas hacen del ordenador, Internet y comercio electrónico. 
+
+
+
+

@@ -1,0 +1,138 @@
+---
+title: "Información Mutua"
+output: html_notebook
+---
+##NOTAS Y CONCEPTOS
+
+Distribution of events: la distribución de probabilidad sobre el conjunto. p.e... en la previsión del tiempo, en canarias se hablaría de probailidad de sol o de lluvia mientras que en Stocolmo se habla de probailidad de sol, de lluvia, y de nieve.
+
+
+#P-VALUE
+el p-value me mide si mis resultados son especiales o no.
+
+
+##INFERENCIA BAYESIANA:
+###Definición
+
+
+Bayesian inference is no more than counting
+the numbers of ways things can happen, according to our assumptions. Things that can happen more ways are more plausible. And since probability theory is just a calculus for count-
+ing, this means that we can use probability theory as a general way to represent plausibility,
+whether in reference to countable events in the world or rather theoretical constructs like pa-
+rameters.
+
+##Multilevel models
+No me he enterado de la movida
+
+##INFORMATION THEORY
+
+__Informacion__ : The reduction in uncertainty derived from learning an out-
+come.
+
+###Information Entropy
+
+
+__Amás entropía, más información en aportaría saber el valor de la variable aleatoria__
+Más entropía-> más estados en los que podría estar mi variable aleatoria. Lo que cambia mi capacidad de
+
+The uncertainty contained in a probability distribution is the average log-probability of an event.
+“Event” here might refer to a type of weather, like rain or shine, or a particular species of bird
+La entropía de la información es igual a la sumatoria de las probailidades por el logaritmo de la misma probabilidad
+
+La entropía de Shannom mide la incertidumbre de la fuente de información
+
+
+__La entropía es máxima cuando todos los resultados son igual de probables__ Si la entropía baja (xq añadimos alguna infomación al sistema) Tenemos que hacer menos preguntas para saber el resultado
+
+__the less predictable something is, the more entropy it has __
+
+la información se mide por la cantidad de información que necesitamos transmitir para describir un evento probable y cuanto más se espera el evento (eventos comunes y cotidianos), menos información se necesita transmitir. 
+
+###INFORMACIÓN MUTUA
+mide la reducción de la incertidumbre (entropía) de una variable aleatoria, X, debido al conocimiento del valor de otra variable aleatoria Y.
+La _información_ sobre x que me da conocer y.  
+
+
+How can we use information entropy to say how far a model is from the target?
+####Divergencia
+
+__Divergence:__ The additional uncertainty induced by using probabilities from
+one distribution to describe another distribution
+
+Se explica la cantidad de entropía de la información que existe en tre un modelo de probabilidades y otro. 
+Puedo comparar el modelo de probabilidades q1 y q2 y el p1 y p2.. así se cuanto están lejos uno de otro.
+La divergencia nos ayuda a contrastar las distintas aproximaciones de nuestra distribución de probabilidad p.
+
+
+#####Kullback-Leibler divergence or simply K-L
+if we have
+a pair of candidate distributions, then the candidate that minimizes the divergence will be
+closest to the target. Since predictive models specify probabilities of events (observations),
+we can use divergence to compare the accuracy of models.
+
+Divergence depends upon direction. In general, H(p, q) is not equal to H(q, p).
+
+divergence leads to using a measure of model fit known as deviance.
+####Deviance
+
+Es una aproximación de la divergencia K-L pero en el que se asume que no conocemos el valor de nuestra distribución de probabilidades.  __Model's Deviance__ **(esto en realizadad no me ha quedado del todo claro, volver a leer)**
+
+
+La desviación es una medida de "accuracy"" retrodictiva no predictiva. Nos interesa ldesviasción de un datos nuevo (desconocido)
+
+###TRANSFER ENTROPY (Thomas Schreiber Jan 2000)
+
+¡¡the calculation of transfer entropy requires stationary data!!
+
+Transfer entropy is a non-parametric measure of directed, __asymmetric__ information transfer between two processes.
+
+
+##Shannon transfer entropy  
+
+ Let I and J denote two discrete random variables with marginal probability distributions p(i) and p(j) and joint probability distribution p(i,j), whose dynamical structures correspond to stationary Markov processes of order k (process I) and l (process J).
+
+The Markov property implies that the probability to observe I at time t+1 in state i conditional on the k previous observations is $p(i_{t+1}|i_t,...,i_{t−k+1})=p(i_{t+1}|i_t,...,i_{t−k})$. The average number of bits needed to encode the observation in t+1 if the previous k
+
+values are known is given by
+
+$h_I(k)=−∑ip(i_{t+1},i^{(k)}_t)⋅log(p(i_{t+1}|i^{(k)}_t)),$
+
+where $i^{(k)}_t=(i_t,...,i_{t−k+1}). h_J(l)$ can be derived analogously for process J.
+
+
+##Rényi transfer 
+
+__For more robust statistics and especially in the case of multi-fractal phenomena it is often recommendable to work with coverings and use generalised Renyi entropies instead of partitions and Shannon entropies__
+
+
+Such a partition is generated by dividing the range of the
+given dataset into
+S(size of the alphabet) disjoint intervals, such that the number of data points in every interval
+is constant and thereforep(i)=1/S
+
+In finance, pricing relevant information is readily associated with tail events, i.e. relatively large positive or negative returns. If these are indeed more relevant, Rényi transfer entropy provides a tool to give more weight to their contribution to the overall information flow. 
+in time series  by sampling randomly without constraints, we are destroying the time-dependence structure in the time series.
+
+###Boostrapping
+
+Bootstrapping is a well-known technique used to estimate the properties of an statistic.
+random sampling with replacement
+The general idea is that by doing so we are effectively sampling from a distribution that matches the empirical distribution of the current sample, which can be seen as an approximation of sampling from the actual population distribution. 
+in time series  by sampling randomly without constraints, we are destroying the time-dependence structure in the time series.
+
+###block bootstrapping
+
+every single time you pick a value from the original sample, a set of adjacent samples must be also picked in order not to break temporal dependencies among series values. used when the data, or the errors in a model, are correlated. The block bootstrap tries to replicate the correlation by resampling blocks of data instead of individual values.
+
+###Markov block bootstrap
+
+The bootstrap method is a resampling technique used to estimate statistics on a population by sampling a dataset with replacement.
+
+In contrast to shuffling, the Markov block bootstrap preserves the dependencies within each time series.
+Thereby, it generates the distribution of transfer entropy estimates under the null hypothesis of no information transfer.
+
+
+###hipótesis nula y p-value
+
+The P-value approach involves determining "likely" or "unlikely" by determining the probability — assuming the null hypothesis were true — of observing a more extreme test statistic in the direction of the alternative hypothesis than the one observed. If the P-value is small, say less than (or equal to) α, then it is "unlikely." And, if the P-value is large, say more than α, then it is "likely."
+If the P-value is less than (or equal to) α, then the null hypothesis is rejected in favor of the alternative hypothesis. And, if the P-value is greater than α, then the null hypothesis is not rejected.

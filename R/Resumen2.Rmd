@@ -1,0 +1,148 @@
+---
+title: "Forecast Models"
+output:
+  html_notebook: default
+  pdf_document: default
+---
+
+
+
+
+# IPI:
+
+Qué es el IPI
+
+El Índice de Producción Industrial (IPI) mide la evolución mensual de la actividad productiva de las ramas industriales, es decir, de las industrias extractivas, manufactureras y de producción y distribución de energía eléctrica, agua y gas y, por primera vez para la base 2010, también la división 36: Captación, depuración y distribución de agua, de la sección E de la CNAE-2009.
+
+Este indicador refleja la evolución conjunta de la cantidad y de la calidad, eliminando la influencia de los precios. 
+
+Para  conseguir  el  objetivo  marcado  por  el  Reglamento  para  la  obtención  de  este  
+indicador  se  selecciona  una  cesta  de  productos  o  bienes  representativos  de  toda  la  
+industria y un panel de establecimientos industriales que fabriquen estos bienes y que 
+serán  los  que  facilitan  los  datos  sobre  las  producciones  mensuales  realizadas.
+
+Los cambios  de  base  son  importantes,  no  sólo  por  actualizar  las  ponderaciones,  sino  
+también para revisar la cesta de los productos y el panel de establecimientos (aunque 
+en  el  panel  se  van  sustituyendo    las  bajas  que  se  producen  por  cierre  de  los  
+establecimientos). 
+
+El  objetivo  del  Índice  de  Producción  es  medir  los  cambios  que  se  producen  en  el  
+volumen, en términos de valor añadido
+
+Dado   que   es   un   índice   de   volumen,   las   cantidades   (tanto   producidas   como   
+consumidas) __deben estar valoradas a precios del periodo base  __.  
+
+El  índice  de  producción  es  una  medición  teórica  a  la  que  hay  que  aproximarse  
+mediante  mediciones  prácticas.  En  la  práctica  los  siguientes  valores  son  adecuados  
+como sustitutos para la construcción de los índices:
+
+1)   Los valores de la producción bruta (deflactados). 
+2)   Los volúmenes   
+3)   El volumen de negocios (deflactado) 
+4)   El insumo de trabajo 
+5)   El insumo de materias primas  
+6)   El insumo de energía  
+
+###ÍNDICES ELEMENTALES
+El Índice de Producción Industrial base 2010 es un __índice de Laspeyres de base fija. __
+En el caso del IPI los agregados elementales son los productos más adecuados para 
+aproximar la evolución de la actividad de cada una de las clases (cuatro dígitos) de las 
+__secciones B, C, D__ y división 36 de la CNAE 2009.
+
+Para cada una de las ramas de actividad industrial, determinada a nivel de clase de la 
+CNAE 2009, se obtiene, de la Encuesta Industrial Anual de Producto (EIAP, ya la tengo)  correspondiente 
+al año base del IPI, el valor de la producción de cada uno de los productos que según 
+la  PRODCOM  están  incluidos  en  esa  clase. Una  vez  ordenados  estos  productos  por  
+su valor de producción se seleccionan los más importantes, hasta cubrir un porcentaje 
+significativo del valor de la producción total en esa clase.  
+Según  las  recomendaciones internacionales , en la práctica los siguientes valores son adecuados 
+como sustitutos para la construcción de los índices: los valores de la producción bruta 
+(deflactados),  los  volúmenes,  el  volumen  de  negocios  (deflactado),  el  insumo  de  
+trabajo, el insumo de materias primas y el insumo de energía. 
+
+Se utilizan tres de estos métodos
+
+* Los volúmenes 
+
+Productos  que  pertenecen  a  actividades  con  
+producciones   homogéneas   en   cantidades   físicas.  Se solicita   a   los   
+informantes  las  cantidades  producidas  en  el  mes  del  producto  seleccionado,  
+expresadas en Kilogramos, Toneladas, Metros, Es  el  método  más  utilizado,  las  actividades  para  las  que  
+se utiliza representan el 77% del VAB. 
+
+* Los valores de la producción bruta (deflactados).
+
+productos  de  actividades  con  producciones  heterogéneas  o  
+cambiantes. e solicita al establecimiento el valor de la producción de 
+ese  producto  en  el  mes  de  referencia  y  posteriormente  se  deflacta  utilizando  el  
+índice  de  precios  más  ajustado  a  ese  producto. Los    índice  de  precios  para  
+deflactar se obtienen de los Índices de Precios Industriales (IPRI) y de los Índices 
+de  Precios  de  Exportación  de  Productos  Industriales  (IPRIX).  Se  utilizan  para    
+ramas de actividad  que  representan el 21% del VAB. 
+
+
+* El insumo de trabajo 
+
+Este  método  se  emplea  para  las  actividades  con  productos  con  largo  proceso  de  
+fabricación,  únicos,  etc  (industria  naval,  ferroviaria  y  aeronáutica).  Se  utilizan  en  
+pocas ramas y representan el 2% del VAB. 
+
+###Formulación
+
+$I_i^t = I_i^{t-1} frac{}
+
+
+Puede  ocurrir  que  en  algún  mes,  por  motivos  vacacionales,  por  ser  productos  
+estacionales  u  otros,  el  índice  en  un  periodo  determinado  llega  a  valer  cero  o  el  
+denominador  de  la  expresión  anterior  sea  0.  En  estos  casos,  para  calcular  los  
+índices de meses siguientes y evitar una indeterminación en la fórmula se utiliza 
+la siguiente expresión general: 
+
+(FÓRMULA)
+
+
+TABLAS EN IPI:
+
+* 2002 - 2018 Base 2015
+* 2002 - 2017 Base 2010
+* 2002 - 2013 Base 2005
+
+Tabla utilizada: Base 2015
+Índices:
+
+* General
+* Bienes de Consumo
+* Bienes de Consumo Duraderos
+* Bienes de Consumo no Duraderos
+* Bienes Intermedios 
+* Bienes de Equipo
+* Energía
+
+
+###ÍNDICES AGREGADOS
+Los índices agregados de las clases (cuatro dígitos de CNAE) se obtienen como suma 
+ponderada  de  los  índices  elementales  de  los  productos  pertenecientes  a  dicha  clase,  
+ponderados  en  función  del  valor  de  la  producción  extraída  de  la  de  la  Encuesta  
+Industrial  Anual  de  Productos  (EIAP). sta  encuesta  no  dispone  de  información  del  
+valor  añadido  generado  en  la  producción  de  cada  bien,  pero    sí  del  valor  de  la  
+producción de cada uno. 
+
+
+###ÍNDICES  CORREGIDOS  DE  EFECTOS  ESTACIONALES  Y  DE  EFECTOS  DE  CALENDARIO  
+Los  Índices  de  Producción  Industrial  nacionales  se  publican  corregidos  de  efectos  
+estacionales y de calendario en base 2010. 
+
+El  método  empleado  para  la  corrección  de  los  efectos  de  calendario  está  basado,  
+siguiendo  el  estándar  del  INE  y  de  acuerdo  a  las  recomendaciones  de  Eurostat,  en  
+modelos  regARIMA  (modelos  de  regresión  con  errores  ARIMA  estacionarios). 
+
+
+
+## Resumen
+
+##Resumen
+```{r}
+class(IPRI)
+head(IPRI,3)
+summary(IPRI)
+```

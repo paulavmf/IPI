@@ -1,0 +1,301 @@
+---
+title: "Forecast Models"
+output:
+  html_notebook: default
+  pdf_document: default
+---
+
+
+
+```{r}
+rm(list=ls())
+setwd("~/Documentos/Rstudio/TFM") #xq cada documento me cambia la ruta
+source("IPI_O.R")
+setwd("~/Documentos/Rstudio/TFM")
+```
+
+#NAIVE FORECAST
+```{r}
+autoplot(IPI$`Índice general`, xlab = "Time", ylab = "Índice General",title = "Índice de Producción Industrial base 2015")
+```
+
+
+
+
+```{r}
+
+```
+
+
+
+
+
+
+
+
+
+
+```{r}
+naive_IPI<-naive(IPI$`Índice general`, h = 12)
+autoplot(fcIPI_gen)
+summary(naive_IPI)
+naive_IPI$x
+```
+
+```{r}
+forecast$`Point Forecast`
+tail(IPI$`Índice general`,12)
+```
+
+
+##CHECK RESIDUALS: 
+comprobar si el residuo de el naive forecast punto por punto de mi serie temportal es un white noise gaussiano:
+
+
+```{r}
+IPI$general %>% naive() %>% checkresiduals()
+```
+
+p-value<0.05 El residuo no sigue una normal
+
+##ACCURACY PARA LA PREDICCIÓN DEl último año
+
+
+```{r}
+#USANDO EL AS.TS LAS FEHAS DEJAN DE TENER SENTIDO
+training2<-subset(as.ts(IPI$`Índice general`), end = 199-12)
+naive_IPIgen2 <- naive(training2, h = 12)
+accuracy(naive_IPIgen2, as.ts(IPI$`Índice general`)) 
+acc_naive[,2]
+```
+
+
+
+##Ajuste
+
+```{r}
+#Creo la versión ts de los dastos
+ts_IPIgen<-ts(IPI$`Índice general`, start =c(2002, 1), end = c(2018,7) , frequency = 12)
+training<-subset(ts_IPIgen, end = 199-12)
+naive_IPIgen <- naive(training, h = 12)
+autoplot(naive_IPIgen) + autolayer(fitted(naive_IPIgen)) 
+```
+
+
+
+#CROSS VALIDATION
+Error que produce naive forecast ccalculando 10 pasos con cross validation
+
+```{r}
+e<- tsCV(IPI$general, forecastfunction = naive, h = 10)
+
+# Compute the MSE values and remove missing values
+mse <- colMeans(e^2, na.rm = TRUE)
+
+
+#el error mse según e horizonte
+data.frame(h = 1:10, MSE = mse) %>%
+  ggplot(aes(x = h, y = MSE)) + geom_point()
+```
+
+
+
+
+
+
+
+#SIMPLE EXPONENTIAL SMOOTHING
+
+###Resumen a h= 10
+```{r}
+sesfc <- ses(IPI$general,  h = 10)
+summary(sesfc)
+
+```
+
+###Predicción a horizonte = 10
+
+```{r}
+autoplot(sesfc)
+```
+
+
+###Ajuste
+
+```{r}
+autoplot(sesfc) + autolayer(fitted(sesfc)) #veo como predoice el mode lo cada valor
+```
+
+
+##HOLTS METHOD 
+
+igual al simple exponential smoothing pero añadiendo la tendencia (trend)
+
+
+###Predicción de los 10 datos siguientes:
+```{r}
+fcholt <-  holt(IPI$general, h = 10)
+summary(fcholt)
+autoplot(fcholt)+ autolayer(fitted(fcholt))
+```
+
+
+###Residuo
+```{r}
+checkresiduals(fcholt)
+```
+
+
+p-value es menor que 0.05 el residuo no es una normal gaussiana
+
+
+##ETS MODEL
+elige el modelo EXPONENTIAL SMOOTHING minimizando parametro AICa 
+
+```{r}
+etsfc <- ets(IPI$general)
+summary(etsfc)
+```
+
+ME DA UN (M,N,N) osea, tiene un multiplicative trend no es aditivo y no es seansonal
+
+
+###Predicción a h = 5
+```{r}
+autoplot(forecast(etsfc, h = 5))
+```
+
+###Residuo
+
+
+```{r}
+checkresiduals(etsfc)
+```
+
+p-value<0.05, no es white noise
+
+#BOX-COX transformations
+
+Transformación exponencial de los datos, es decir, aplicar logaritmo, raíz, raíz cúbica, para hallar un mejor modelo ETS
+
+```{r}
+l = BoxCox.lambda(IPI$general)
+IPI$general %>% BoxCox(lambda = l) %>% autoplot()
+```
+
+Sigue sin eliminar la tendencia?
+
+#ARIMA MODEL
+ARIMA = autoregressive integrated moving average
+auto.arima() CREA UN MODELO ARIMA ÓPIMO (optimizando AIC) DE MANERA AUTOMÁTICA
+```{r}
+ar_model <-auto.arima(IPI$general)
+summary(ar_model)
+```
+
+###Residuo
+```{r}
+
+checkresiduals(ar_model) #MIS RESIDUOS NO SON WHITE NOISE
+
+```
+
+###forecast h = 10
+
+```{r}
+ar_model%>%forecast(h = 10)%>%autoplot()
+
+```
+
+
+
+
+
+##ETS VS ARIMA MEDIANTE CROSS VALIDATION
+```{r}
+fets <- function(x, h) {
+  forecast(ets(x), h = h)
+}
+farima <- function(x, h) {
+  forecast(auto.arima(x), h = h)
+}
+
+e1 <- tsCV(IPI$general, fets, h = 1)
+e2 <- tsCV(IPI$general, farima, h = 1)
+
+MSE_ets<-mean(e1^2, na.rm = TRUE) 
+MSR_AR<-mean(e2^2, na.rm = TRUE)
+```
+ERROR ETS
+```{r}
+MSE_ets
+
+```
+ERROR ARIMA
+```{r}
+MSE_AR
+```
+
+```{r}
+IPI$general %>% ets() %>% forecast(h = 10) %>% autoplot()
+
+```
+
+(ALGO FALLA AQUÍ)
+
+
+#DYMAMIC REGRESSION MODELS
+uso información de otra TS para mi forecast
+
+```{r}
+fit <- auto.arima(IPI$general,xreg = IPI$energía)
+summary(fit)
+```
+
+```{r}
+
+cbind("Regression Errors" = residuals(fit, type="regression"),
+      "ARIMA errors" = residuals(fit, type="innovation")) %>%
+  autoplot(facets=TRUE)
+
+```
+
+
+
+###Residuo
+```{r}
+
+checkresiduals(fit) #no es white noise..
+
+```
+
+#a la hora de hacer el fit tengo que dar un valor al error(la TS que uso, en eeste caso la energía)
+
+###Ajuste
+```{r}
+forecast(fit, xreg = cbind(rep(mean(window(IPI$energía,start = "2015-01-01", end = end(IPI)),10))))
+
+```
+
+
+
+
+#NEURAL NETWORK
+
+Feed-forward neural networks with a single hidden layer and lagged inputs for forecasting univariate time serie
+
+```{r}
+nnfit<- nnetar(IPI$general, lambda = 0)
+autoplot(forecast(nnfit, h =10))
+help(nnetar)
+
+```
+
+
+```{r}
+fcast <- forecast(nnfit, PI=TRUE, h=30)
+autoplot(fcast)
+```
+
+
+

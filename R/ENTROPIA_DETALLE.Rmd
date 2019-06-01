@@ -1,0 +1,185 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+##Relación IPI Consumo de Gasolina
+
+
+###ÍNDICE GENERAL:
+
+
+
+
+```{r}
+par(mfrow = c(1, 2))
+plot.xts(IPI$`Índice general`)
+truehist(IPI$`Índice general`)
+```
+
+
+###Consumo de Gasolina
+```{r}
+par(mfrow = c(1, 2))
+plot.xts(consumo_gas$GASOLINA, main = "Consumo de Gasolina")
+truehist(consumo_gas$GASOLINA)
+```
+
+
+Para realizar el cálculo de transferencia de entropía se necesita que los datos sean estacionarios, por lo que es necesario eliminar la tendencia.
+
+
+```{r}
+par(mfrow = c(1, 2))
+plot(diff(IPI$`Índice general`), main= "Diff(IPI)")
+plot(diff(consumo_gas$GASOLINA ), main =  "Diff(Con dumo de Gasolina")
+```
+###Calcula la Transferencia de entropía tipo Shannon
+```{r}
+xy<-create_xy(IPI$`Índice general`,consumo_gas$GASOLINA)
+transfer_entropy(xy$Índice.general,xy$GASOLINA)
+
+```
+
+
+###Cálculo de la Transferencia de entopía Renyi 
+Usando distintos valores de q en las dos direcciones y comparándolo con la tranasferencia de entropía de shannon (q=1)
+
+```{r}
+renyi2d(xy$Índice.general,xy$GASOLINA)
+```
+
+
+##Relación IPI Producción bruta de energía
+
+
+###ÍNDICE GENERAL:
+
+```{r}
+par(mfrow = c(1, 2))
+plot.xts(IPI$`Índice general`)
+truehist(IPI$`Índice general`)
+```
+
+
+##Producción bruta de energía
+```{r}
+par(mfrow = c(1, 2))
+plot.xts(EN$`Producción bruta de energía eléctrica`)
+truehist(EN$`Producción bruta de energía eléctrica`)
+```
+
+
+Para realizar el cálculo de transferencia de entropía se necesita que los datos sean estacionarios, por lo que es necesario eliminar la tendencia.
+
+
+```{r}
+par(mfrow = c(1, 2))
+plot(diff(IPI$`Índice general`),main = "Diff(índice general)")
+plot(diff(EN$`Producción bruta de energía eléctrica`), main= "Diff(Producción bruta de energía eléctrica")
+```
+####Calcula la Transferencia de entropía tipo Shannon
+```{r}
+xy<-create_xy(IPI$`Índice general`,EN$`Producción bruta de energía eléctrica`)
+transfer_entropy(xy$Índice.general,xy$Producción.bruta.de.energía.eléctrica)
+
+```
+
+
+####Cálculo de la Transferencia de entopía Renyi 
+Usando distintos valores de q en las dos direcciones y comparándolo con la tranasferencia de entropía de shannon (q=1)
+
+```{r}
+renyi2d(xy$Índice.general,xy$Producción.bruta.de.energía.eléctrica)
+```
+
+
+##Relación IPI Energía Eléctrica disponible
+
+
+###ÍNDICE GENERAL:
+
+```{r}
+par(mfrow = c(1, 2))
+plot.xts(IPI$`Índice general`)
+truehist(IPI$`Índice general`)
+```
+
+
+##Producción bruta de energía
+```{r}
+par(mfrow = c(1, 2))
+plot.xts(EN$`Energía eléctrica disponible`)
+truehist(EN$`Energía eléctrica disponible`)
+```
+
+
+Para realizar el cálculo de transferencia de entropía se necesita que los datos sean estacionarios, por lo que es necesario eliminar la tendencia.
+
+
+```{r}
+par(mfrow = c(1, 2))
+plot(diff(IPI$`Índice general`),main = "Diff(índice general)")
+plot(diff(EN$`Energía eléctrica disponible`), main= "Diff(Energía eléctrica disponible")
+```
+####Calcula la Transferencia de entropía tipo Shannon
+```{r}
+xy<-create_xy(IPI$`Índice general`,EN$`Energía eléctrica disponible`)
+transfer_entropy(xy$Índice.general,xy$Energía.eléctrica.disponible )
+
+```
+
+
+####Cálculo de la Transferencia de entopía Renyi 
+Usando distintos valores de q en las dos direcciones y comparándolo con la tranasferencia de entropía de shannon (q=1)
+
+```{r}
+renyi2d(xy$Índice.general,xy$Energía.eléctrica.disponible)
+```
+
+##Relación IPI Consumo de Energía
+
+
+###ÍNDICE GENERAL:
+
+```{r}
+par(mfrow = c(1,2))
+truehist(IPI$`Índice general`)
+plot.xts(IPI$`Índice general`)
+```
+
+
+
+
+##PRECIO GAS
+```{r}
+par(mfrow = c(1,2))
+
+plot.xts(EN$`Consumo de energía eléctrica`)
+truehist(EN$`Consumo de energía eléctrica`)
+```
+
+
+Para realizar el cálculo de transferencia de entropía se necesita que los datos sean estacionarios, por lo que es necesario eliminar la tendencia.
+
+
+```{r}
+par(mfrow = c(1,2))
+plot(diff(IPI$`Índice general`), main = "Diff(IPI)")
+plot(diff(EN$`Consumo de energía eléctrica`), main= "Diff(Consumo de Energía Eléctrica")
+```
+####Calcula la Transferencia de entropía tipo Shannon
+```{r}
+xy<-create_xy(IPI$`Índice general`,EN$`Consumo de energía eléctrica`)
+transfer_entropy(xy$Índice.general,xy$Consumo.de.energía.eléctrica )
+
+```
+
+
+####Cálculo de la Transferencia de entopía Renyi 
+Usando distintos valores de q en las dos direcciones y comparándolo con la tranasferencia de entropía de shannon (q=1)
+
+```{r}
+renyi2d(xy$Índice.general,xy$Consumo.de.energía.eléctrica)
+```
+
